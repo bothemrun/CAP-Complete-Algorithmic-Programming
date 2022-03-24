@@ -1,40 +1,33 @@
-#include<algorithm>
-#include<string.h>
 #include<unordered_set>
 class Solution {
 private:
-    void backtrack(const vector<int>& nums, const int& n, vector<vector<int>>& ans, bool cur_used[], vector<int>& cur_ans){
-        if(cur_ans.size() == n){
+    void backtrack(const vector<int>& nums, vector<vector<int>>& ans, vector<int>& cur_ans, vector<bool>& cur_used){
+        if(cur_ans.size() == nums.size()){
             ans.push_back(cur_ans);
             return;
         }
         
-        unordered_set<int> used_in_this_spot;
-        for(int i=0;i<n;i++)if(cur_used[i] == false){
+        unordered_set<int> enumerated_in_this_spot;
+        for(int i=0;i<nums.size();i++)if(cur_used[i] == false){
             //NOTE: deduplicate
-            if(used_in_this_spot.find(nums[i]) != used_in_this_spot.end())continue;
-            else used_in_this_spot.insert(nums[i]);
+            if(enumerated_in_this_spot.find(nums[i]) != enumerated_in_this_spot.end()) continue;
+            else enumerated_in_this_spot.insert(nums[i]);
             
             cur_used[i] = true;
             cur_ans.push_back(nums[i]);
-            backtrack(nums,n,ans,cur_used,cur_ans);
+            backtrack(nums,ans,cur_ans, cur_used);
+            //NOTE: backtrack
             cur_used[i] = false;
             cur_ans.pop_back();
         }
     }
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        int n = nums.size();
-        
-        sort(nums.begin(), nums.end());//NOTE: deduplicate
-        
         vector<vector<int>> ans;
-        
-        bool cur_used[n];
-        memset(cur_used,0,sizeof(cur_used));
         vector<int> cur_ans;
+        vector<bool> cur_used (nums.size(), false);
         
-        backtrack(nums,n,ans,cur_used,cur_ans);
+        backtrack(nums,ans,cur_ans, cur_used);
         return ans;
     }
 };
