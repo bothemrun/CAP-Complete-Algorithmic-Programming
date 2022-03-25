@@ -7,27 +7,28 @@ private:
             return;
         }
         
-        unordered_set<int> enumerated_in_this_spot;
+        unordered_set<int> neighbor_deduplicate;
         for(int i=0;i<nums.size();i++)if(cur_used[i] == false){
-            //NOTE: deduplicate
-            if(enumerated_in_this_spot.find(nums[i]) != enumerated_in_this_spot.end()) continue;
-            else enumerated_in_this_spot.insert(nums[i]);
+            if(neighbor_deduplicate.find(nums[i]) != neighbor_deduplicate.end()) continue;
+            else neighbor_deduplicate.insert(nums[i]);
+            //NOTE: neighbor deduplicate by hash set
             
-            cur_used[i] = true;
             cur_ans.push_back(nums[i]);
-            backtrack(nums,ans,cur_ans, cur_used);
+            cur_used[i] = true;
+            backtrack(nums, ans, cur_ans, cur_used);
             //NOTE: backtrack
-            cur_used[i] = false;
             cur_ans.pop_back();
+            cur_used[i] = false;
         }
     }
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         vector<vector<int>> ans;
         vector<int> cur_ans;
+        
         vector<bool> cur_used (nums.size(), false);
         
-        backtrack(nums,ans,cur_ans, cur_used);
+        backtrack(nums, ans, cur_ans, cur_used);
         return ans;
     }
 };
