@@ -12,6 +12,7 @@
  */
 class Solution {
 private:
+    //NOTE: struct, class : pass/return by value (copy)
     vector<TreeNode*>& dfs_return_by_ref_mem_in_heap(const int& from, const int& to){
         vector<TreeNode*>* ans_in_heap = new vector<TreeNode*>();
         
