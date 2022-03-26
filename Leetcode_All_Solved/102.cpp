@@ -14,20 +14,20 @@
 #include<queue>
 class Solution {
 private:
-    void inorder(TreeNode* root, unordered_map<TreeNode*,int>& level_m, int level=0){
+    void preorder(TreeNode* root, unordered_map<TreeNode*,int>& level_m, int level=0){
         if(root == nullptr)return;
         
         pair<TreeNode*,int> p (root, level);
         level_m.insert(p);
         
-        inorder(root->left, level_m, level+1);
-        inorder(root->right, level_m, level+1);
+        preorder(root->left, level_m, level+1);
+        preorder(root->right, level_m, level+1);
     }
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
         //get levels
         unordered_map<TreeNode*,int> level_m;
-        inorder(root, level_m);
+        preorder(root, level_m);
         
         //level order traversal
         vector<vector<int>> ans;
