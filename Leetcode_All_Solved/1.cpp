@@ -1,46 +1,27 @@
-#include<unordered_map>
-#include<utility>
 #include<algorithm>
-#include<assert.h>
+#include<unordered_map>
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        //record number to idx
+        //
         unordered_map<int,vector<int>> num2indices;
-        for(int i=0;i<nums.size();i++){
-            unordered_map<int,vector<int>>::iterator f = num2indices.find(nums.at(i));
-            if(f == num2indices.end()){
-                vector<int> v; v.push_back(i);
-                pair<int,vector<int>> p (nums.at(i), v);
-                num2indices.insert(p);
-            }else f->second.push_back(i);
-        }
-        //sort
+        for(int i=0;i<nums.size();i++)num2indices[nums[i]].push_back(i);
+        
+        //NOTE: 2 pointers
         sort(nums.begin(), nums.end());
-        //recursive assumption
-        vector<int> ans;
+        
         int low = 0, high = nums.size()-1;
         while(low < high){
-            if(nums.at(low) + nums.at(high) == target){
-                if(nums[low] == nums[high]){
-                    unordered_map<int,vector<int>>::iterator f = num2indices.find(nums[low]);
-                    assert(f != num2indices.end());
-                    assert(f->second.size() >= 2);
-                    ans.push_back(f->second.at(0));
-                    ans.push_back(f->second.at(1));
-                    return ans;
-                }else{
-                    unordered_map<int,vector<int>>::iterator f_low = num2indices.find(nums[low]);
-                    unordered_map<int,vector<int>>::iterator f_high = num2indices.find(nums[high]);
-                    assert(f_low != num2indices.end());
-                    assert(f_high != num2indices.end());
-                    ans.push_back(f_low->second.at(0));
-                    ans.push_back(f_high->second.at(0));
-                    return ans;
-                }
-            }else if(nums[low] + nums[high] > target) high--;
-            else low++; //NOTE: recursive assumption
+            if(nums[low]+nums[high] == target){
+                if(nums[low] == nums[high])return vector<int>({ num2indices[nums[low]].at(0), num2indices[nums[low]].at(1) });
+                else return vector<int>({ num2indices[nums[low]].at(0), num2indices[nums[high]].at(0) });
+            }
+            
+            //NOTE: not need to go backwards [j+1, k2], k2 > k. why? : when was [j0,k2] at before? (1)j0<=j, ok, already covered. (2)j0==j+1, impossible, since (a)never go backwards.
+            if(nums[low]+nums[high] < target)low++;
+            else high--;
         }
-        return ans;//not here
+        
+        return vector<int>();//not here
     }
 };
