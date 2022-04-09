@@ -21,8 +21,10 @@ public:
     int islandPerimeter(vector<vector<int>>& grid) {
         m = grid.size(), n = grid[0].size();
         visited_land = vector<vector<bool>>(m, vector<bool>(n, false));
-        for(int i=0;i<m;i++)for(int j=0;j<n;j++)if(grid[i][j])
+        for(int i=0;i<m;i++)for(int j=0;j<n;j++)if(grid[i][j]){
             dfs(grid, i, j);
+            break;
+        }
         return perimeter;
     }
 };
