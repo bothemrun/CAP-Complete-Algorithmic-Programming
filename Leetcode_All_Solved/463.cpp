@@ -23,8 +23,8 @@ public:
         visited_land = vector<vector<bool>>(m, vector<bool>(n, false));
         for(int i=0;i<m;i++)for(int j=0;j<n;j++)if(grid[i][j]){
             dfs(grid, i, j);
-            break;
+            return perimeter;
         }
-        return perimeter;
+        return (-100);//not here
     }
 };
