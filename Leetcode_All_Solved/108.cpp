@@ -13,13 +13,13 @@ class Solution {
 private:
     TreeNode* divide_conquer(const vector<int>& nums, int low, int high){
         if(low > high)return nullptr;
-        
         int mid = low + (high-low)/2;
-        TreeNode* root = new TreeNode(nums[mid]);
-        //ok for low==high
-        root->left = divide_conquer(nums, low, mid-1);
-        root->right = divide_conquer(nums, mid+1, high);
-        return root;
+        TreeNode* n = new TreeNode(nums[mid]);
+        if(low == high)return n;
+        
+        n->left = divide_conquer(nums, low, mid-1);
+        n->right = divide_conquer(nums, mid+1, high);
+        return n;
     }
 public:
     TreeNode* sortedArrayToBST(vector<int>& nums) {
