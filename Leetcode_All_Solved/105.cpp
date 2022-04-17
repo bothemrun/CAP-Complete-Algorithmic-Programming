@@ -10,30 +10,27 @@
  * };
  */
 #include<unordered_map>
-#include<utility>
 class Solution {
 private:
-    int cur_pre_root;
-    unordered_map<int,int> in_val2idx;
+    unordered_map<int, int> val2inorder_idx;
     inline void init(const vector<int>& inorder){
-        for(int i=0;i<inorder.size();i++){
-            pair<int,int> p(inorder[i],i);
-            this->in_val2idx.insert(p);
-        }
+        for(int i=0;i<inorder.size();i++)
+            val2inorder_idx[inorder[i]] = i;
     }
-    TreeNode* tree(const vector<int>& preorder, const vector<int>& inorder, int in_low, int in_high){
+    TreeNode* divide_conquer(const vector<int>& preorder, const vector<int>& inorder, int in_low, int in_high, int& preorder_idx){
         if(in_low > in_high)return nullptr;
         
-        int cur_in_root = this->in_val2idx.find(preorder[this->cur_pre_root])->second;
-        TreeNode* root = new TreeNode(preorder[(this->cur_pre_root)++]);
-        //NOTE: must build left subtree first
-        root->left = tree(preorder, inorder, in_low, cur_in_root - 1);
-        root->right = tree(preorder, inorder, cur_in_root + 1, in_high);
+        int in_root_idx = val2inorder_idx[preorder[preorder_idx++]];
+        TreeNode* root = new TreeNode(inorder[in_root_idx]);
+        
+        root->left = divide_conquer(preorder, inorder, in_low, in_root_idx-1, preorder_idx);
+        root->right = divide_conquer(preorder, inorder, in_root_idx+1, in_high, preorder_idx);
         return root;
     }
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         init(inorder);
-        return tree(preorder, inorder, 0, inorder.size()-1);
+        int preorder_idx = 0;
+        return divide_conquer(preorder, inorder, 0, inorder.size()-1, preorder_idx);
     }
 };
