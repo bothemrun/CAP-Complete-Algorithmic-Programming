@@ -2,14 +2,18 @@
 class Solution {
 private:
     static bool cmp_ptr(const int& a, const int& b){
-        return a < b;//max heap
+        return a > b;//min heap
     }
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        make_heap(nums.begin(), nums.end(), cmp_ptr);//max heap
-        for(int i=0;i<k-1;i++){
-            pop_heap(nums.begin(), nums.end(), cmp_ptr); nums.pop_back();
+        //NOTE: O(nlogk), not O(nlogn)
+        vector<int> min_heap_k;
+        for(const int& x:nums){
+            min_heap_k.push_back(x); push_heap(min_heap_k.begin(), min_heap_k.end(), cmp_ptr);
+            if(min_heap_k.size() > k){
+                pop_heap(min_heap_k.begin(), min_heap_k.end(), cmp_ptr); min_heap_k.pop_back();
+            }
         }
-        return nums.front();
+        return min_heap_k.front();
     }
 };
