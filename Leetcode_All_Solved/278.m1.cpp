@@ -16,7 +16,7 @@ public:
         if(low == high) assert(0);
         
         if(good_mid)return binary(mid+1, high);
-        else return binary(low, mid-1);
+        else return binary(low, mid);
     }
     int firstBadVersion(int n) {
         return binary(1, n);
