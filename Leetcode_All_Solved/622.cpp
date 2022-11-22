@@ -15,6 +15,13 @@ public:
         head = nullptr;
         tail = nullptr;
     }
+    ~MyCircularQueue(){
+        while(head != nullptr){
+            class Node* next = head->next;
+            delete head;
+            head = next;
+        }
+    }
     
     bool enQueue(int value) {
         if(isFull())return false;
