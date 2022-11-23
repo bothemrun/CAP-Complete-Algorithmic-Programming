@@ -1,4 +1,5 @@
 //m2
+//the most optimal is not limited by unique values.
 //optim space from O(n) to O(1) by XOR.
 //XOR: (1)multiplication == division (2)so A^A == I (3)identity == 0
 //why turn Node* into long long? why not directly do XOR on Node* ?
