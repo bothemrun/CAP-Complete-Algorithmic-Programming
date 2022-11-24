@@ -12,17 +12,19 @@
 #include<algorithm>
 class Solution {
 public:
-    int max_path_sum = 0;
-    int postorder(TreeNode* root){
+    int subtree_max_depth_postorder(TreeNode* root, int& max_diameter){
         if(root == nullptr)return 0;
-        int left_max_path = postorder(root->left);
-        int right_max_path = postorder(root->right);
-        max_path_sum = max(max_path_sum, left_max_path + right_max_path);
-        return 1 + max(left_max_path, right_max_path);
+        
+        int l_subtree_max_depth = subtree_max_depth_postorder(root->left, max_diameter);
+        int r_subtree_max_depth = subtree_max_depth_postorder(root->right, max_diameter);
+        
+        max_diameter = max(max_diameter, l_subtree_max_depth + r_subtree_max_depth);
+        
+        return max(l_subtree_max_depth, r_subtree_max_depth) + 1;
     }
     int diameterOfBinaryTree(TreeNode* root) {
-        //diameter = path must pass thru 1 subtree root
-        postorder(root);
-        return max_path_sum;
+        int max_diameter = 0;
+        subtree_max_depth_postorder(root, max_diameter);
+        return max_diameter;
     }
 };
