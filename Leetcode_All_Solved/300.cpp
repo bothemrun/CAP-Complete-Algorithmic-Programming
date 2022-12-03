@@ -1,21 +1,22 @@
-//PH
+//use Longest Common Subsequence
+#include<set>
 #include<algorithm>
 class Solution {
 public:
     int lengthOfLIS(vector<int>& nums) {
-        //NOTE: end[i] := LIS ending at nums[i]
-        //NOTE: end[j] = 1+max{end[i], 0<=i<j, nums[i] < nums[j]}
-        int n = nums.size();
-        vector<int> end(n, 1);
-        for(int j=0;j<n;j++){
-            for(int i=0;i<j;i++)if(nums[i] < nums[j])
-                end[j] = max(end[j], end[i]+1);
-        }
+        set<int> s;
+        for(int num: nums) s.insert(num);
+        vector<int> unique_sorted;
+        for(set<int>::iterator it=s.begin();it!=s.end();it++)
+            unique_sorted.push_back( *it );
         
-        //max of end[j]
-        int lis = 1;
-        for(int i=0;i<n;i++)
-            lis = max(lis, end[i]);
-        return lis;
+        int m = unique_sorted.size(), n = nums.size();
+        vector<vector<int>> lcs_dp(m + 1, vector<int>(n + 1, 0));
+        for(int i=1;i<=m;i++)
+            for(int j=1;j<=n;j++){
+                if(unique_sorted[i-1] == nums[j-1]) lcs_dp[i][j] = lcs_dp[i-1][j-1] + 1;
+                else lcs_dp[i][j] = max(lcs_dp[i-1][j-1], max(lcs_dp[i-1][j], lcs_dp[i][j-1]) );
+            }
+        return lcs_dp[m][n];
     }
 };
