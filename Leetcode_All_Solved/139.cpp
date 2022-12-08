@@ -7,15 +7,15 @@ public:
         if(high < 0)return true;
         if(dp[high] != notyet)return dp[high];
 
-        bool ret = false;
         for(const string& word: wordDict){
             int low_tmp = high - (word.size()-1);
             if(low_tmp < 0)continue;
             if(word == s.substr(low_tmp, word.size()) )
-                ret |= dfs(s, low_tmp-1, dp, wordDict);
+                if( dfs(s, low_tmp-1, dp, wordDict) == true)
+                    return (dp[high] = true);
         }
 
-        return (dp[high] = ret);
+        return (dp[high] = false);
     }
 
     bool wordBreak(string s, vector<string>& wordDict) {
