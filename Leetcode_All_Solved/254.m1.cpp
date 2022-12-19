@@ -40,7 +40,14 @@ public:
 
         //NOTE: child==self --> infinite loops
         for(const int& child: children[n])if(child != self){
-            //NOTE: dedup, both nondecreasing / nonincreasing are ok.
+            
+            //NOTE: dedup, both nondecreasing / nonincreasing are ok --> Wrong !!
+            //NOTE: for back() >= child, factorize() needs to go from n-1~2, not from n-1~sqrt(n)
+            //NOTE: so why <= can go from 2~sqrt(n)?
+            //NOTE: 'cuz 2~sqrt(n) satisfies decomposability.
+            //for eg., for 6, must have visited 2, 6 <= 6
+            //NOTE: but n-1~sqrt(n) doesn't satisfy decomposability.
+            //for eg., for 6, we may not visit 2, 3.
             if(factor1.size() != 0 && !(factor1.back() <= child) )continue;
 
             factor1.push_back(child);
