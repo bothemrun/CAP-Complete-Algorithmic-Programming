@@ -14,7 +14,7 @@ public:
         int neg = (nonneg_low - 1) - (0-1);
         int pos = (n-1) - (pos_low-1);
         
-        cout << pos << " "<< neg<<endl; 
+        //cout << pos << " "<< neg<<endl; 
         return max(neg, pos);
     }
 };
