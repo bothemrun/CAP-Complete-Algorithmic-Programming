@@ -1,7 +1,3 @@
-#define dfs_bfs 0 //0 1
-
-#if dfs_bfs == 0
-
 #define notyet (-1)
 #include<algorithm>
 #include<limits.h>
@@ -53,5 +49,3 @@ public:
         return max_min_dist;
     }
 };
-
-#endif //dfs_bfs
