@@ -2,28 +2,24 @@ class Solution {
 public:
     const string delim = ",";
     const string null = "#";
-    inline void split(const string& preorder, vector<string>& serial, const string& delim){
-        int end;
-        int start = 0;
-        while( (end = preorder.find(delim, start)) != string::npos){
-            serial.push_back( preorder.substr(start, (end-1) - (start-1) ) );
+    inline void split(const string& s, vector<string>& serial, const string& delim){
+        int start = 0, end;
+        while( (end = s.find(delim, start)) != string::npos){
+            serial.push_back( s.substr(start, (end-1) - (start-1) ) );
             start = end + delim.size();
         }
-        serial.push_back( preorder.substr(start) );
+        if(start < s.size()) serial.push_back( s.substr(start) );
     }
     bool deserial(const vector<string>& serial, int& i){
-        //NOTE: too few null
+        //too few null
         if(!(i < serial.size())) return false;
-        
-        if(serial.at(i) == null){
+
+        if(serial[i] == null){
             i++;
             return true;
         }
 
-        //NOTE: too many null
-        if(serial[i] == null)return false;
         i++;
-
         if( deserial(serial, i) == false)return false;
         if( deserial(serial, i) == false)return false;
         return true;
@@ -34,7 +30,8 @@ public:
 
         int i = 0;
         bool ret = deserial(serial, i);
-        //NOTE: too few null
-        return ret && (i == serial.size());
+
+        //remaining at the end
+        return ret && i == serial.size();
     }
 };
