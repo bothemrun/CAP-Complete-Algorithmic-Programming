@@ -17,50 +17,38 @@ public:
     }
 };
 */
-#define test 1 //1 0
-#include<assert.h>
+
 class Codec {
 public:
     const string delim = ",";
-    const string child_end = "n";
+    const string child_end = "e";
 
     // Encodes a tree to a single string.
     void preorder1(Node* root, string& serial){
-        assert(root != nullptr);
-
         serial += to_string(root->val) + delim;
-        for(Node* child: root->children){
-            //assert(child != nullptr);
+        for(Node* child: root->children)
             preorder1(child, serial);
-        }
         serial += child_end + delim;
     }
     string serialize(Node* root) {
         string serial = "";
-        if(root == nullptr)return "";//edge case
-        preorder1(root, serial);
+        if(root == nullptr) return child_end;
         
-        #if test == 1
-        cout << serial << endl;
-        #endif
-
+        preorder1(root, serial);
         return serial;
     }
 	
     // Decodes your encoded data to tree.
-    inline void split(const string& data, vector<string>& serial, const string& delim){
-        int end;
-        int start = 0;
-        while( (end = data.find(delim, start)) != string::npos ){
-            serial.push_back( data.substr(start, (end-1) - (start-1) ) );
+    inline void split(const string& s, vector<string>& serial, const string& delim){
+        int start = 0, end;
+        while( (end = s.find(delim, start)) != string::npos){
+            serial.push_back( s.substr(start, (end-1) - (start-1) ) );
             start = end + delim.size();
         }
-        //actually not needed in this problem
-        serial.push_back( data.substr(start) );
+        if(start < s.size()) serial.push_back( s.substr(start) );
     }
-    Node* preorder2(const vector<string>& serial, int& i){
-        assert(i < serial.size());
 
+    Node* preorder2(const vector<string>& serial, int& i){
         if(serial.at(i) == child_end){
             i++;
             return nullptr;
@@ -68,17 +56,16 @@ public:
 
         Node* root = new Node( stoi(serial[i]) );
         i++;
+        
         Node* child_ret;
-        while( (child_ret = preorder2(serial, i)) != nullptr ){
+        while( (child_ret = preorder2(serial, i)) != nullptr)
             root->children.push_back(child_ret);
-        }
         return root;
     }
     Node* deserialize(string data) {
-        if(data == "")return nullptr;//edge case
-
         vector<string> serial;
         split(data, serial, delim);
+
         int i = 0;
         return preorder2(serial, i);
     }
