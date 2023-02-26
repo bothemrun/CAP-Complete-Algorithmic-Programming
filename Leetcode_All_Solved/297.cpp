@@ -7,68 +7,55 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-#define test 0 // 1 0
-#include<assert.h>
 class Codec {
 public:
     const string delim = ",";
     const string null = "n";
 
-    void preorder(TreeNode* root, string& serial){
+    // Encodes a tree to a single string.
+    void preorder1(TreeNode* root, string& serial){
         if(root == nullptr){
             serial += null + delim;
             return;
         }
 
         serial += to_string(root->val) + delim;
-        preorder(root->left, serial);
-        preorder(root->right, serial);
+        preorder1(root->left, serial);
+        preorder1(root->right, serial);
     }
-    // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
         string serial = "";
-        preorder(root, serial);
+        preorder1(root, serial);
         return serial;
     }
 
-    TreeNode* deserial(const vector<string>& serial, int& i){
-        assert(i < serial.size());
-        if(serial[i] == null){
+    // Decodes your encoded data to tree.
+    inline void split(const string& s, vector<string>& serial, const string& delim){
+        int start = 0, end;
+        while( (end = s.find(delim, start)) != string::npos){
+            serial.push_back( s.substr(start, (end-1) - (start-1) ) );
+            start = end + delim.size();
+        }
+        if(start < s.size()) serial.push_back( s.substr(start) );
+    }
+    TreeNode* preorder2(const vector<string>& serial, int& i){
+        if(serial.at(i) == null){
             i++;
             return nullptr;
         }
-
-        TreeNode* root = new TreeNode( stoi( serial[i] ) );
+        TreeNode* root = new TreeNode( stoi(serial[i]) );
         i++;
-        root->left = deserial(serial, i);
-        root->right = deserial(serial, i);
+
+        root->left = preorder2(serial, i);
+        root->right = preorder2(serial, i);
         return root;
     }
-    // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
         vector<string> serial;
-        int low = 0;
-        int high = 0;
-        while(high < data.size()){
-            while(high < data.size() && data.substr(high, 1) != delim){
-                high++;
-            }
-
-            assert(high-1 < data.size());
-            serial.push_back( data.substr(low, (high-1) - (low-1) ) );
-
-            high += delim.size();
-            low = high;
-        }
-
-        #if test == 1
-        for(const string& s: serial)
-            cout << s << " ";
-        cout << endl;
-        #endif
+        split(data, serial, delim);
 
         int i = 0;
-        return deserial(serial, i);
+        return preorder2(serial, i);
     }
 };
 
