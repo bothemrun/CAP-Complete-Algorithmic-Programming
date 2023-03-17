@@ -26,8 +26,6 @@ public:
         return node->word_end;
     }
     void insert(const string& word){
-        if(search(word)) return;
-        
         class TrieNode* node = root;
         for(const char& c: word){
             int ch = c - 'a';
