@@ -17,8 +17,6 @@ public:
     }
     
     void insert(string word) {
-        if(search(word) == true)return;
-
         class TrieNode* node = root;
         for(const char& c: word){
             int ch = c - 'a';
