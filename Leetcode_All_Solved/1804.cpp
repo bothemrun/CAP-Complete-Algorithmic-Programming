@@ -11,6 +11,7 @@ public:
 
     TrieNode(){
         children.resize(ALPHABET);
+        for(int i=0;i<ALPHABET;i++) children[i] = nullptr;
         word_end = 0;
         subtree_cnt = 0;
     }
