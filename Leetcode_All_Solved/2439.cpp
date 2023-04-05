@@ -23,11 +23,12 @@ public:
 
     int binary(const vector<int>& nums, const int& low, const int& high){
         int mid = low + (high-low)/2;
-        if(enough(nums, mid-1) == false && enough(nums, mid) == true)
+        int mid_tmp = enough(nums, mid);
+        if(enough(nums, mid-1) == false && mid_tmp == true)
             return mid;
         if(low == high) assert(false);
 
-        if(enough(nums, mid))
+        if(mid_tmp)
             return binary(nums, low, mid);
         else return binary(nums, mid+1, high);
     }
