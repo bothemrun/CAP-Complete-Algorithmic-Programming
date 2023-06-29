@@ -1,3 +1,5 @@
+//wrong answer in previous AC submissions.
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -9,25 +11,26 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-//#include<stdlib.h> //int abs()
-#include<math.h> //float abs()
+#include<math.h>
+#include<algorithm>
+
 class Solution {
 public:
-    void preorder(double& min_diff, int& closest, TreeNode* root, const double& target){
-        if(root == nullptr)return;
+    int ans;
+    void preorder(TreeNode* root, const double& target){
+        if(!root) return;
+
+        double diff1 = abs(root->val - target);
+        double diff2 = abs(ans - target);
+        if(diff1 < diff2) ans = root->val;
+        else if(diff1 == diff2) ans = min(ans, root->val);
         
-        if( abs(target - (double)root->val) < min_diff){
-            min_diff = abs(target -(double)root->val);
-            closest = root->val;
-        }
-        
-        preorder(min_diff, closest, root->left, target);
-        preorder(min_diff, closest, root->right, target);
+        preorder(root->left, target);
+        preorder(root->right, target);
     }
     int closestValue(TreeNode* root, double target) {
-        double min_diff = abs(target - (double)root->val);;
-        int closest = root->val; //root != nullptr
-        preorder(min_diff, closest, root, target);
-        return closest;
+        ans = root->val;
+        preorder(root, target);
+        return ans;
     }
 };
