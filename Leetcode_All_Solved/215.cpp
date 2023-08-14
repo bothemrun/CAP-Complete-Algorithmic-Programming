@@ -1,19 +1,29 @@
-#include<algorithm>
+#include<queue>
+#include<iostream>
+static auto _ = [](){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
+
 class Solution {
-private:
-    static bool cmp_ptr(const int& a, const int& b){
-        return a > b;//min heap
-    }
 public:
     int findKthLargest(vector<int>& nums, int k) {
-        //NOTE: O(nlogk), not O(nlogn)
-        vector<int> min_heap_k;
-        for(const int& x:nums){
-            min_heap_k.push_back(x); push_heap(min_heap_k.begin(), min_heap_k.end(), cmp_ptr);
-            if(min_heap_k.size() > k){
-                pop_heap(min_heap_k.begin(), min_heap_k.end(), cmp_ptr); min_heap_k.pop_back();
-            }
-        }
-        return min_heap_k.front();
+        auto cmp_lam = [](const int& a, const int& b){
+            return a > b;//minheap
+        };
+        priority_queue<int, vector<int>, decltype(cmp_lam) > size_minheap(cmp_lam);
+
+        auto push = [&size_minheap, k](const int& x){
+            size_minheap.push(x);
+            if(size_minheap.size() > k) size_minheap.pop();
+        };
+
+        for(const int& x: nums)
+            push(x);
+        
+        //k<=n
+        return size_minheap.top();
     }
 };
