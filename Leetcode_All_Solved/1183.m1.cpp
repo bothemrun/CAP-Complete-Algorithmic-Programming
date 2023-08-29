@@ -1,0 +1,103 @@
+//m1
+
+// [Complexity]
+// O(1)
+
+
+// [Greedy Proof 1]
+// why translation of only 1 (top left) square doesn't have conflict?
+
+// [A] translated square with no overlap
+//(1) obvious. proved. but the [B], let's assume:
+//(2) for an optimal configuration, choose the square with most points.
+//(3) then copy that optimal square to all other squares.
+//(4) so the crucial part is that: why not exceed maxOnes (conflict) for translated squares with overlap after (3) ?
+
+
+// [B] translated square with overlap
+//(1) since the squares are all copied from the optimal square, so they all the same.
+//(2) now move it in only 1 direction with only 1 directional overlap (vertically or horizontally),
+//(3) we can see that the translated and the un-translated part of the square together form the original square.
+//(4) that is, we can cut and paste that translated part to form the original square.
+//(5) so they are the same after the cut and paste
+//(6) similarly for the translation of arbitray directions, we can cut and paste 3 translated parts.
+
+
+
+
+// [Greedy Proof 2]
+// now we put squares from the top left corner of the big matrix.
+// so what about the remaining parts that don't fit perfectly with the square?
+
+// [A] we have 4 shape parts of square to fill.
+// (1) see official solution pictures for clarity.
+// (2) first choose the intersection shape part, which is the top left shape part.
+// (3) the choose the the left bottom and the top right shape parts in a sorted order.
+// (4) finally the right bottom shape part is useless, since no no intersection between that shape part and the big matrix.
+
+
+
+
+// [Reference]:
+//1. official solution: great pictures
+
+//2. hiteshgupta: https://leetcode.com/problems/maximum-number-of-ones/solutions/377033/c-o-1-solution-with-explanation-totally-intuitive/
+
+//3. Simpleson: https://leetcode.com/problems/maximum-number-of-ones/solutions/376868/p-thon-o-1-solution/
+
+#include<algorithm>
+
+class Solution {
+public:
+    int maximumNumberOfOnes(int width, int height, int sideLength, int maxOnes) {
+        int div1 = width / sideLength;
+        int div2 = height / sideLength;
+        int rem1 = width % sideLength;
+        int rem2 = height % sideLength;
+
+        ///(A) complete squares
+        int ans = maxOnes * div1 * div2;
+
+
+        //(B) partial squares:
+        
+        //1. top left shape part
+        int top_left_shape_part = rem1 * rem2;
+
+        //2. bottom left & top right shape parts
+        int bottom_left_shape_part = rem1 * sideLength - top_left_shape_part;
+        int top_right_shape_part = rem2 * sideLength - top_left_shape_part;
+        
+
+        // { point in the partial square, total copy of this partial square shape part to the big matrix }
+        // then the contribution of points to the big matrix = [0] * [1] if adequate
+        vector<vector<int>> shape_part_point2count( {
+            {top_left_shape_part, div1 + div2 + 1 },
+            {bottom_left_shape_part, div2 },
+            {top_right_shape_part, div1 }
+        } );
+
+        if( !(div2 >= div1) ) swap( 
+            shape_part_point2count[1],
+            shape_part_point2count[2]
+         );
+
+        
+        int remain_to_fill  = maxOnes;
+        for(const vector<int>& point2count: shape_part_point2count){
+            
+            const int& point = point2count[0];
+            const int& count = point2count[1];
+
+            if(point <= remain_to_fill){
+                remain_to_fill -= point;
+                ans += point * count;
+            }else{
+                ans += remain_to_fill * count;
+                break;
+            }
+        }
+
+        return ans;
+    }
+};
