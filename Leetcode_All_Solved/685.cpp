@@ -39,7 +39,7 @@ public:
         dsu.resize(size);
         for(int i=0;i<size;i++) dsu[i] = i;
 
-        rank.resize(size);
+        rank.resize(size, 1);
         cnt.resize(size, 1);
     }
     int set_find(const int& a){
