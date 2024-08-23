@@ -39,8 +39,8 @@ if(__name__ == "__main__"):
 		for level in ["hard", "medium", "easy"]:
 			f.write(f'## {level} table\n')
 
-			f.write("| # | Problem | Level | Difficulty | Hard_Idea | Tags | Last Date |\n")
-			f.write("| - | ------- | --- | -- | ---- | -------- | --- |\n")
+			f.write("|#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|\n")
+			f.write("|-| ------- | -- |-| ---- | -------- |-|\n")
 
 
 			"""

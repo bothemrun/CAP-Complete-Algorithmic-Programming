@@ -2,8 +2,8 @@
 - [Medium Table](./README.md#medium-table)
 - [Easy Table](./README.md#easy-table)
 ## hard table
-| # | Problem | Level | Difficulty | Hard_Idea | Tags | Last Date |
-| - | ------- | --- | -- | ---- | -------- | --- |
+|#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
+|-| ------- | -- |-| ---- | -------- |-|
 | 1499 | Max Value of Equation | hard | 35 | Hard_Idea | sliding window. queue. monotonic queue. priority queue. | 2024/8/3 |
 | 2334 | Subarray With Elements Greater Than Varying Threshold | hard | 33 | Hard_Idea | stack. monotonic stack. | 2024/8/2 |
 | 2646 | Minimize the Total Price of the Trips | hard | 67 |  | tree. graph. dynamic programming. | 2024/7/29 |
@@ -269,8 +269,8 @@
 | 51 | N-Queens | hard | 70 |  | backtracking. | 2023/6/6 |
 | 52 | N-Queens II | hard | 80 |  | backtracking. | 2023/6/6 |
 ## medium table
-| # | Problem | Level | Difficulty | Hard_Idea | Tags | Last Date |
-| - | ------- | --- | -- | ---- | -------- | --- |
+|#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
+|-| ------- | -- |-| ---- | -------- |-|
 | 592 | Fraction Addition and Subtraction | medium | 78 |  | string. math. | 2024/8/23 |
 | 1062 | Longest Repeating Substring | medium | 63 | Hard_Idea | dynamic programming. binary search. rolling hash. | 2024/8/23 |
 | 320 | Generalized Abbreviation | medium | 80 |  | backtracking. | 2024/8/22 |
@@ -1146,8 +1146,8 @@
 | 36 | Valid Sudoku | medium | 100 |  |  | 2022/3/18 |
 | 17 | Letter Combinations of a Phone Number | medium |  |  | backtracking. | 2022/3/18 |
 ## easy table
-| # | Problem | Level | Difficulty | Hard_Idea | Tags | Last Date |
-| - | ------- | --- | -- | ---- | -------- | --- |
+|#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
+|-| ------- | -- |-| ---- | -------- |-|
 | 476 | Number Complement | easy | 100 |  | bit manipulation. | 2024/8/22 |
 | 1009 | Complement of Base 10 Integer | easy | 100 |  | bit manipulation. | 2024/8/22 |
 | 2057 | Smallest Index With Equal Value | easy | 100 |  | array. | 2024/8/17 |
