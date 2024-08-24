@@ -46,9 +46,9 @@ if(__name__ == "__main__"):
 		logs_level[ l["level"] ].append(l)
 
 	with open(MD_PATH, "w") as f:
-		f.write(f'- [Hard Table](./{MD_PATH}#hard-table)\n')
-		f.write(f'- [Medium Table](./{MD_PATH}#medium-table)\n')
-		f.write(f'- [Easy Table](./{MD_PATH}#easy-table)\n')
+		f.write(f'- [Hard Table](./{MD_PATH}#hard-table) { len( logs_level["hard"] ) } solved\n')
+		f.write(f'- [Medium Table](./{MD_PATH}#medium-table) { len( logs_level["medium"] ) } solved\n')
+		f.write(f'- [Easy Table](./{MD_PATH}#easy-table) { len( logs_level["easy"] ) } solved\n')
 
 		for level in ["hard", "medium", "easy"]:
 			f.write(f'## {level} table\n')

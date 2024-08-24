@@ -1,6 +1,6 @@
-- [Hard Table](./README.md#hard-table)
-- [Medium Table](./README.md#medium-table)
-- [Easy Table](./README.md#easy-table)
+- [Hard Table](./README.md#hard-table) 264 solved
+- [Medium Table](./README.md#medium-table) 874 solved
+- [Easy Table](./README.md#easy-table) 409 solved
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
