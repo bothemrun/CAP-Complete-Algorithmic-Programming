@@ -50,6 +50,9 @@ if(__name__ == "__main__"):
 		f.write(f'- [Medium Table](./{MD_PATH}#medium-table) { len( logs_level["medium"] ) } solved\n')
 		f.write(f'- [Easy Table](./{MD_PATH}#easy-table) { len( logs_level["easy"] ) } solved\n')
 
+		f.write(f'Diff := difficulty (0~100), the lower the harder.\n')
+		f.write(f'Hard_Idea := hard to come up with the solution/idea.\n')
+
 		for level in ["hard", "medium", "easy"]:
 			f.write(f'## {level} table\n')
 
