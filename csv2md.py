@@ -3,6 +3,7 @@
 import csv
 CSV_PATH = "./Leetcode_Log.csv"
 MD_PATH = "README.md"
+LEETCODE_PATH = "./Leetcode_All_Solved/"
 
 if(__name__ == "__main__"):
 	logs = []
@@ -40,7 +41,7 @@ if(__name__ == "__main__"):
 			f.write(f'## {level} table\n')
 
 			f.write("|#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|\n")
-			f.write("|-| ------- | -- |-| ---- | -------- |-|\n")
+			f.write("|-| ------- |--|-|--| -------- |-|\n")
 
 
 			"""
@@ -50,7 +51,8 @@ if(__name__ == "__main__"):
 			"""
 			for l in logs_level[level]:
 				hard_idea = "Hard_Idea" if(l["hard_idea"] == "1") else ""
-				f.write(f'| {l["id"]} | {l["problem"]} | {l["level"]} | {l["difficulty"]} | {hard_idea} | {l["tags"]} | {l["last_date"]} |\n')
+				#f.write(f'| {l["id"]} | {l["problem"]} | {l["level"]} | {l["difficulty"]} | {hard_idea} | {l["tags"]} | {l["last_date"]} |\n')
+				f.write(f'| {l["id"]} | [{l["problem"]}]({LEETCODE_PATH}{l["id"]}.cpp) | {l["level"]} | {l["difficulty"]} | {hard_idea} | {l["tags"]} | {l["last_date"]} |\n')
 		# end for level
 	# end with open
 
