@@ -1,12 +1,12 @@
 - [Hard Table](./README.md#hard-table) 265 solved
-- [Medium Table](./README.md#medium-table) 893 solved
-- [Easy Table](./README.md#easy-table) 420 solved
+- [Medium Table](./README.md#medium-table) 894 solved
+- [Easy Table](./README.md#easy-table) 421 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3307 | [Find the K-th Character in String Game II](./Leetcode_All_Solved/3307.cpp) | hard | 57 |  |  | 2024/9/29 |
+| 3307 | [Find the K-th Character in String Game II](./Leetcode_All_Solved/3307.cpp) | hard | 57 |  | bit manipulation. math. | 2024/9/29 |
 | 1499 | [Max Value of Equation](./Leetcode_All_Solved/1499.m1.cpp) | hard | 35 | Hard_Idea | sliding window. queue. monotonic queue. priority queue. | 2024/8/3 |
 | 2334 | [Subarray With Elements Greater Than Varying Threshold](./Leetcode_All_Solved/2334.cpp) | hard | 33 | Hard_Idea | stack. monotonic stack. | 2024/8/2 |
 | 2646 | [Minimize the Total Price of the Trips](./Leetcode_All_Solved/2646.cpp) | hard | 67 |  | tree. graph. dynamic programming. | 2024/7/29 |
@@ -27,7 +27,7 @@
 | 2209 | [Minimum White Tiles After Covering With Carpets](./Leetcode_All_Solved/2209.cpp) | hard | 70 |  | dynamic programming. | 2024/7/22 |
 | 1416 | [Restore The Array](./Leetcode_All_Solved/1416.cpp) | hard | 70 |  | dynamic programming. | 2024/7/22 |
 | 2188 | [Minimum Time to Finish the Race](./Leetcode_All_Solved/2188.cpp) | hard | 40 | Hard_Idea | dynamic programming. | 2024/7/22 |
-| 2163 | [Minimum Difference in Sums After Removal of Elements](./Leetcode_All_Solved/2163.cpp) | hard | 66 |  | priority queue. dynamic programming. | 2024/7/22 |
+| 2163 | [Minimum Difference in Sums After Removal of Elements](./Leetcode_All_Solved/2163.m1.cpp) | hard | 65 |  | priority queue. dynamic programming. | 2024/10/11 |
 | 2430 | [Maximum Deletions on a String](./Leetcode_All_Solved/2430.cpp) | hard | 46 | Hard_Idea | dynamic programming. string matching. | 2024/7/21 |
 | 403 | [Frog Jump](./Leetcode_All_Solved/403.m1.cpp) | hard | 64 |  | dynamic programming. | 2024/7/20 |
 | 1964 | [Find the Longest Valid Obstacle Course at Each Position](./Leetcode_All_Solved/1964.cpp) | hard | 31 | Hard_Idea | binary search. | 2024/7/20 |
@@ -274,6 +274,7 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 1497 | [Check If Array Pairs Are Divisible by k](./Leetcode_All_Solved/1497.cpp) | medium | 78 |  | hash table. | 2024/10/2 |
 | 3301 | [Maximize the Total Height of Unique Towers](./Leetcode_All_Solved/3301.cpp) | medium | 59 |  |  | 2024/9/29 |
 | 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](./Leetcode_All_Solved/3305.m1.cpp) | medium | 80 |  |  | 2024/9/29 |
 | 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](./Leetcode_All_Solved/3306.cpp) | medium | 56 |  |  | 2024/9/29 |
@@ -1164,12 +1165,13 @@
 | 16 | [3Sum Closest](./Leetcode_All_Solved/16.cpp) | medium | 32 |  | 3sum. two pointers. | 2022/3/19 |
 | 18 | [4Sum](./Leetcode_All_Solved/18.cpp) | medium | 37 |  | 3sum. two pointers. | 2022/3/19 |
 | 454 | [4Sum II](./Leetcode_All_Solved/454.cpp) | medium | 37 |  | 3sum. two pointers. | 2022/3/19 |
-| 3 | [Longest Substring Without Repeating Characters](./Leetcode_All_Solved/3.cpp) | medium |  |  | sliding window. | 2022/3/18 |
+| 3 | [Longest Substring Without Repeating Characters](./Leetcode_All_Solved/3.m1.cpp) | medium | 79 |  | sliding window. | 2024/10/2 |
 | 36 | [Valid Sudoku](./Leetcode_All_Solved/36.m1.cpp) | medium | 80 |  | hash table. matrix. | 2024/9/25 |
 | 17 | [Letter Combinations of a Phone Number](./Leetcode_All_Solved/17.cpp) | medium |  |  | backtracking. | 2022/3/18 |
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 1331 | [Rank Transform of an Array](./Leetcode_All_Solved/1331.cpp) | easy | 80 |  | hash table. sorting. | 2024/10/2 |
 | 3300 | [Minimum Element After Replacement With Digit Sum](./Leetcode_All_Solved/3300.cpp) | easy | 100 |  |  | 2024/9/29 |
 | 3304 | [Find the K-th Character in String Game I](./Leetcode_All_Solved/3304.cpp) | easy | 100 |  |  | 2024/9/29 |
 | 20 | [Valid Parentheses](./Leetcode_All_Solved/20.cpp) | easy | 70 |  | stack. | 2024/9/25 |
