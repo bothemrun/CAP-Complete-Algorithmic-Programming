@@ -1,11 +1,12 @@
-- [Hard Table](./README.md#hard-table) 265 solved
-- [Medium Table](./README.md#medium-table) 894 solved
-- [Easy Table](./README.md#easy-table) 421 solved
+- [Hard Table](./README.md#hard-table) 266 solved
+- [Medium Table](./README.md#medium-table) 898 solved
+- [Easy Table](./README.md#easy-table) 422 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3336 | [Find the Number of Subsequences With Equal GCD](./Leetcode_All_Solved/3336.cpp) | hard | 43 | Hard_Idea |  | 2024/10/27 |
 | 3307 | [Find the K-th Character in String Game II](./Leetcode_All_Solved/3307.cpp) | hard | 57 |  | bit manipulation. math. | 2024/9/29 |
 | 1499 | [Max Value of Equation](./Leetcode_All_Solved/1499.m1.cpp) | hard | 35 | Hard_Idea | sliding window. queue. monotonic queue. priority queue. | 2024/8/3 |
 | 2334 | [Subarray With Elements Greater Than Varying Threshold](./Leetcode_All_Solved/2334.cpp) | hard | 33 | Hard_Idea | stack. monotonic stack. | 2024/8/2 |
@@ -274,10 +275,14 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3335 | [Total Characters in String After Transformations I](./Leetcode_All_Solved/3335.cpp) | medium | 69 |  |  | 2024/10/27 |
+| 3334 | [Find the Maximum Factor Score of Array](./Leetcode_All_Solved/3334.m1.cpp) | medium | 80 |  |  | 2024/10/27 |
+| 3332 | [Maximum Points Tourist Can Earn](./Leetcode_All_Solved/3332.cpp) | medium | 80 |  |  | 2024/10/26 |
+| 3331 | [Find Subtree Sizes After Changes](./Leetcode_All_Solved/3331.cpp) | medium | 65 |  |  | 2024/10/26 |
 | 1497 | [Check If Array Pairs Are Divisible by k](./Leetcode_All_Solved/1497.cpp) | medium | 78 |  | hash table. | 2024/10/2 |
-| 3301 | [Maximize the Total Height of Unique Towers](./Leetcode_All_Solved/3301.cpp) | medium | 59 |  |  | 2024/9/29 |
-| 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](./Leetcode_All_Solved/3305.m1.cpp) | medium | 80 |  |  | 2024/9/29 |
-| 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](./Leetcode_All_Solved/3306.cpp) | medium | 56 |  |  | 2024/9/29 |
+| 3301 | [Maximize the Total Height of Unique Towers](./Leetcode_All_Solved/3301.cpp) | medium | 57 |  | greedy. | 2024/9/29 |
+| 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](./Leetcode_All_Solved/3305.m1.cpp) | medium | 80 |  | sliding window. | 2024/9/29 |
+| 3306 | [Count of Substrings Containing Every Vowel and K Consonants II](./Leetcode_All_Solved/3306.cpp) | medium | 56 |  | sliding window. | 2024/9/29 |
 | 49 | [Group Anagrams](./Leetcode_All_Solved/49.cpp) | medium | 80 |  | hash table. | 2024/9/25 |
 | 155 | [Min Stack](./Leetcode_All_Solved/155.cpp) | medium | 70 |  | stack. | 2024/9/25 |
 | 285 | [Inorder Successor in BST ](./Leetcode_All_Solved/285.cpp) | medium |  |  |  | 2024/9/25 |
@@ -1171,11 +1176,12 @@
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3330 | [Find the Original Typed String I](./Leetcode_All_Solved/3330.cpp) | easy | 80 |  |  | 2024/10/26 |
 | 1331 | [Rank Transform of an Array](./Leetcode_All_Solved/1331.cpp) | easy | 80 |  | hash table. sorting. | 2024/10/2 |
-| 3300 | [Minimum Element After Replacement With Digit Sum](./Leetcode_All_Solved/3300.cpp) | easy | 100 |  |  | 2024/9/29 |
-| 3304 | [Find the K-th Character in String Game I](./Leetcode_All_Solved/3304.cpp) | easy | 100 |  |  | 2024/9/29 |
+| 3300 | [Minimum Element After Replacement With Digit Sum](./Leetcode_All_Solved/3300.cpp) | easy | 100 |  | math. | 2024/9/29 |
+| 3304 | [Find the K-th Character in String Game I](./Leetcode_All_Solved/3304.cpp) | easy | 100 |  | simulation. | 2024/9/29 |
 | 20 | [Valid Parentheses](./Leetcode_All_Solved/20.cpp) | easy | 70 |  | stack. | 2024/9/25 |
-| 717 | [1-bit and 2-bit Characters](./Leetcode_All_Solved/717.cpp) | easy | 100 |  |  | 2024/9/25 |
+| 717 | [1-bit and 2-bit Characters](./Leetcode_All_Solved/717.cpp) | easy | 100 |  | array. | 2024/9/25 |
 | 448 | [Find All Numbers Disappeared in an Array](./Leetcode_All_Solved/448.cpp) | easy | 100 |  | hash table. | 2024/9/25 |
 | 243 | [Shortest Word Distance](./Leetcode_All_Solved/243.cpp) | easy |  |  |  | 2024/9/25 |
 | 3038 | [Maximum Number of Operations With the Same Score I](./Leetcode_All_Solved/3038.cpp) | easy | 100 |  | array. simulation. | 2024/9/10 |
