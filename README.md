@@ -1,19 +1,22 @@
-- [Hard Table](./README.md#hard-table) 266 solved
+- [Hard Table](./README.md#hard-table) 269 solved
 - [Medium Table](./README.md#medium-table) 898 solved
-- [Easy Table](./README.md#easy-table) 422 solved
+- [Easy Table](./README.md#easy-table) 423 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3336 | [Find the Number of Subsequences With Equal GCD](./Leetcode_All_Solved/3336.cpp) | hard | 43 | Hard_Idea |  | 2024/10/27 |
+| 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 36 | Hard_Idea | dynamic programming. | 2024/11/2 |
+| 1987 | [Number of Unique Good Subsequences](./Leetcode_All_Solved/1987.cpp) | hard | 39 | Hard_Idea | dynamic programming. | 2024/11/2 |
+| 1316 | [Distinct Echo Substrings](./Leetcode_All_Solved/1316.cpp) | hard | 49 | Hard_Idea | dynamic programming. rolling hash. trie. | 2024/11/2 |
+| 3336 | [Find the Number of Subsequences With Equal GCD](./Leetcode_All_Solved/3336.cpp) | hard | 43 | Hard_Idea | dynamic programming. math. number theory. | 2024/10/27 |
 | 3307 | [Find the K-th Character in String Game II](./Leetcode_All_Solved/3307.cpp) | hard | 57 |  | bit manipulation. math. | 2024/9/29 |
 | 1499 | [Max Value of Equation](./Leetcode_All_Solved/1499.m1.cpp) | hard | 35 | Hard_Idea | sliding window. queue. monotonic queue. priority queue. | 2024/8/3 |
 | 2334 | [Subarray With Elements Greater Than Varying Threshold](./Leetcode_All_Solved/2334.cpp) | hard | 33 | Hard_Idea | stack. monotonic stack. | 2024/8/2 |
 | 2646 | [Minimize the Total Price of the Trips](./Leetcode_All_Solved/2646.cpp) | hard | 67 |  | tree. graph. dynamic programming. | 2024/7/29 |
 | 3068 | [Find the Maximum Sum of Node Values](./Leetcode_All_Solved/3068.m2.cpp) | hard | 70 | Hard_Idea | tree. bit manipulation. dynamic programming. greedy. | 2024/7/29 |
 | 2458 | [Height of Binary Tree After Subtree Removal Queries](./Leetcode_All_Solved/2458.cpp) | hard | 47 | Hard_Idea | tree. | 2024/7/28 |
-| 3013 | [Divide an Array Into Subarrays With Minimum Cost II](./Leetcode_All_Solved/3013.cpp) | hard | 40 | Hard_Idea | sliding window. ordered set. | 2024/7/28 |
+| 3013 | [Divide an Array Into Subarrays With Minimum Cost II](./Leetcode_All_Solved/3013.cpp) | hard | 36 | Hard_Idea | sliding window. ordered set. | 2024/7/28 |
 | 975 | [Odd Even Jump](./Leetcode_All_Solved/975.m2.cpp) | hard | 60 | Hard_Idea | ordered set. dynamic programming. monotonic stack. | 2024/7/27 |
 | 1671 | [Minimum Number of Removals to Make Mountain Array](./Leetcode_All_Solved/1671.m1.cpp) | hard | 37 |  | dynamic programming. greedy. binary search. | 2024/7/23 |
 | 1402 | [Reducing Dishes](./Leetcode_All_Solved/1402.cpp) | hard | 76 |  | greedy. | 2024/7/23 |
@@ -27,9 +30,9 @@
 | 1847 | [Closest Room](./Leetcode_All_Solved/1847.cpp) | hard | 33 | Hard_Idea | binary search. ordered set. | 2024/7/23 |
 | 2209 | [Minimum White Tiles After Covering With Carpets](./Leetcode_All_Solved/2209.cpp) | hard | 70 |  | dynamic programming. | 2024/7/22 |
 | 1416 | [Restore The Array](./Leetcode_All_Solved/1416.cpp) | hard | 70 |  | dynamic programming. | 2024/7/22 |
-| 2188 | [Minimum Time to Finish the Race](./Leetcode_All_Solved/2188.cpp) | hard | 40 | Hard_Idea | dynamic programming. | 2024/7/22 |
+| 2188 | [Minimum Time to Finish the Race](./Leetcode_All_Solved/2188.cpp) | hard | 37 | Hard_Idea | dynamic programming. | 2024/7/22 |
 | 2163 | [Minimum Difference in Sums After Removal of Elements](./Leetcode_All_Solved/2163.m1.cpp) | hard | 65 |  | priority queue. dynamic programming. | 2024/10/11 |
-| 2430 | [Maximum Deletions on a String](./Leetcode_All_Solved/2430.cpp) | hard | 46 | Hard_Idea | dynamic programming. string matching. | 2024/7/21 |
+| 2430 | [Maximum Deletions on a String](./Leetcode_All_Solved/2430.cpp) | hard | 39 | Hard_Idea | dynamic programming. string matching. | 2024/7/21 |
 | 403 | [Frog Jump](./Leetcode_All_Solved/403.m1.cpp) | hard | 64 |  | dynamic programming. | 2024/7/20 |
 | 1964 | [Find the Longest Valid Obstacle Course at Each Position](./Leetcode_All_Solved/1964.cpp) | hard | 31 | Hard_Idea | binary search. | 2024/7/20 |
 | 2111 | [Minimum Operations to Make the Array K-Increasing](./Leetcode_All_Solved/2111.cpp) | hard | 29 | Hard_Idea | binary search. | 2024/7/20 |
@@ -46,7 +49,7 @@
 | 2528 | [Maximize the Minimum Powered City](./Leetcode_All_Solved/2528.cpp) | hard | 50 | Hard_Idea | binary search. sliding window. greedy. | 2024/7/15 |
 | 1187 | [Make Array Strictly Increasing](./Leetcode_All_Solved/1187.cpp) | hard | 40 | Hard_Idea | dynamic programming. binary search. | 2024/7/15 |
 | 2272 | [Substring With Largest Variance](./Leetcode_All_Solved/2272.m1.cpp) | hard | 40 | Hard_Idea | dynamic programming. | 2024/7/15 |
-| 956 | [Tallest Billboard](./Leetcode_All_Solved/956.cpp) | hard | 26 | Hard_Idea | dynamic programming. | 2024/7/15 |
+| 956 | [Tallest Billboard](./Leetcode_All_Solved/956.cpp) | hard | 24 | Hard_Idea | dynamic programming. | 2024/7/15 |
 | 1312 | [Minimum Insertion Steps to Make a String Palindrome](./Leetcode_All_Solved/1312.cpp) | hard | 70 |  | dynamic programming. | 2024/7/15 |
 | 727 | [Minimum Window Subsequence](./Leetcode_All_Solved/727.cpp) | hard | 48 |  | dynamic programming. | 2024/7/15 |
 | 1771 | [Maximize Palindrome Length From Subsequences](./Leetcode_All_Solved/1771.m1.cpp) | hard | 47 | Hard_Idea | dynamic programming. | 2024/7/15 |
@@ -275,10 +278,10 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3335 | [Total Characters in String After Transformations I](./Leetcode_All_Solved/3335.cpp) | medium | 69 |  |  | 2024/10/27 |
-| 3334 | [Find the Maximum Factor Score of Array](./Leetcode_All_Solved/3334.m1.cpp) | medium | 80 |  |  | 2024/10/27 |
-| 3332 | [Maximum Points Tourist Can Earn](./Leetcode_All_Solved/3332.cpp) | medium | 80 |  |  | 2024/10/26 |
-| 3331 | [Find Subtree Sizes After Changes](./Leetcode_All_Solved/3331.cpp) | medium | 65 |  |  | 2024/10/26 |
+| 3335 | [Total Characters in String After Transformations I](./Leetcode_All_Solved/3335.cpp) | medium | 69 |  | dynamic programming. | 2024/10/27 |
+| 3334 | [Find the Maximum Factor Score of Array](./Leetcode_All_Solved/3334.m1.cpp) | medium | 80 |  | math. number theory. | 2024/10/27 |
+| 3332 | [Maximum Points Tourist Can Earn](./Leetcode_All_Solved/3332.cpp) | medium | 80 |  | dynamic programming. | 2024/10/26 |
+| 3331 | [Find Subtree Sizes After Changes](./Leetcode_All_Solved/3331.cpp) | medium | 57 |  | tree. hash table. | 2024/10/26 |
 | 1497 | [Check If Array Pairs Are Divisible by k](./Leetcode_All_Solved/1497.cpp) | medium | 78 |  | hash table. | 2024/10/2 |
 | 3301 | [Maximize the Total Height of Unique Towers](./Leetcode_All_Solved/3301.cpp) | medium | 57 |  | greedy. | 2024/9/29 |
 | 3305 | [Count of Substrings Containing Every Vowel and K Consonants I](./Leetcode_All_Solved/3305.m1.cpp) | medium | 80 |  | sliding window. | 2024/9/29 |
@@ -1176,7 +1179,8 @@
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3330 | [Find the Original Typed String I](./Leetcode_All_Solved/3330.cpp) | easy | 80 |  |  | 2024/10/26 |
+| 1957 | [Delete Characters to Make Fancy String](./Leetcode_All_Solved/1957.cpp) | easy | 97 |  | sliding window. | 2024/11/1 |
+| 3330 | [Find the Original Typed String I](./Leetcode_All_Solved/3330.cpp) | easy | 80 |  | sliding window. | 2024/10/26 |
 | 1331 | [Rank Transform of an Array](./Leetcode_All_Solved/1331.cpp) | easy | 80 |  | hash table. sorting. | 2024/10/2 |
 | 3300 | [Minimum Element After Replacement With Digit Sum](./Leetcode_All_Solved/3300.cpp) | easy | 100 |  | math. | 2024/9/29 |
 | 3304 | [Find the K-th Character in String Game I](./Leetcode_All_Solved/3304.cpp) | easy | 100 |  | simulation. | 2024/9/29 |
