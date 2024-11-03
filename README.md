@@ -1,12 +1,18 @@
-- [Hard Table](./README.md#hard-table) 269 solved
-- [Medium Table](./README.md#medium-table) 898 solved
-- [Easy Table](./README.md#easy-table) 423 solved
+- [Hard Table](./README.md#hard-table) 275 solved
+- [Medium Table](./README.md#medium-table) 900 solved
+- [Easy Table](./README.md#easy-table) 425 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 36 | Hard_Idea | dynamic programming. | 2024/11/2 |
+| 1012 | [Numbers With Repeated Digits](./Leetcode_All_Solved/1012.cpp) | hard | 38 |  | dynamic programming. bitmask. | 2024/11/3 |
+| 2376 | [Count Special Integers](./Leetcode_All_Solved/2376.cpp) | hard | 45 |  | dynamic programming. bitmask. | 2024/11/3 |
+| 2514 | [Count Anagrams](./Leetcode_All_Solved/2514.cpp) | hard | 69 |  | combinatorics. math. | 2024/11/3 |
+| 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 38 | Hard_Idea |  | 2024/11/3 |
+| 600 | [Non-negative Integers without Consecutive Ones](./Leetcode_All_Solved/600.cpp) | hard | 63 |  | dynamic programming. | 2024/11/3 |
+| 233 | [Number of Digit One](./Leetcode_All_Solved/233.cpp) | hard | 59 |  | dynamic programming. | 2024/11/3 |
+| 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 35 | Hard_Idea | dynamic programming. | 2024/11/2 |
 | 1987 | [Number of Unique Good Subsequences](./Leetcode_All_Solved/1987.cpp) | hard | 39 | Hard_Idea | dynamic programming. | 2024/11/2 |
 | 1316 | [Distinct Echo Substrings](./Leetcode_All_Solved/1316.cpp) | hard | 49 | Hard_Idea | dynamic programming. rolling hash. trie. | 2024/11/2 |
 | 3336 | [Find the Number of Subsequences With Equal GCD](./Leetcode_All_Solved/3336.cpp) | hard | 43 | Hard_Idea | dynamic programming. math. number theory. | 2024/10/27 |
@@ -278,6 +284,8 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3342 | [Find Minimum Time to Reach Last Room II](./Leetcode_All_Solved/3342.cpp) | medium | 41 |  |  | 2024/11/3 |
+| 3341 | [Find Minimum Time to Reach Last Room I](./Leetcode_All_Solved/3341.cpp) | medium | 68 |  |  | 2024/11/3 |
 | 3335 | [Total Characters in String After Transformations I](./Leetcode_All_Solved/3335.cpp) | medium | 69 |  | dynamic programming. | 2024/10/27 |
 | 3334 | [Find the Maximum Factor Score of Array](./Leetcode_All_Solved/3334.m1.cpp) | medium | 80 |  | math. number theory. | 2024/10/27 |
 | 3332 | [Maximum Points Tourist Can Earn](./Leetcode_All_Solved/3332.cpp) | medium | 80 |  | dynamic programming. | 2024/10/26 |
@@ -1179,6 +1187,8 @@
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3340 | [Check Balanced String](./Leetcode_All_Solved/3340.cpp) | easy | 100 |  |  | 2024/11/3 |
+| 796 | [Rotate String](./Leetcode_All_Solved/796.cpp) | easy | 100 |  | string. | 2024/11/3 |
 | 1957 | [Delete Characters to Make Fancy String](./Leetcode_All_Solved/1957.cpp) | easy | 97 |  | sliding window. | 2024/11/1 |
 | 3330 | [Find the Original Typed String I](./Leetcode_All_Solved/3330.cpp) | easy | 80 |  | sliding window. | 2024/10/26 |
 | 1331 | [Rank Transform of an Array](./Leetcode_All_Solved/1331.cpp) | easy | 80 |  | hash table. sorting. | 2024/10/2 |
