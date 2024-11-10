@@ -1,15 +1,18 @@
-- [Hard Table](./README.md#hard-table) 275 solved
-- [Medium Table](./README.md#medium-table) 900 solved
-- [Easy Table](./README.md#easy-table) 425 solved
+- [Hard Table](./README.md#hard-table) 278 solved
+- [Medium Table](./README.md#medium-table) 907 solved
+- [Easy Table](./README.md#easy-table) 427 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 1012 | [Numbers With Repeated Digits](./Leetcode_All_Solved/1012.cpp) | hard | 38 |  | dynamic programming. bitmask. | 2024/11/3 |
+| 3352 | [Count K-Reducible Numbers Less Than N](./Leetcode_All_Solved/3352.cpp) | hard | 46 | Hard_Idea |  | 2024/11/10 |
+| 3351 | [Sum of Good Subsequences](./Leetcode_All_Solved/3351.cpp) | hard | 38 |  |  | 2024/11/10 |
+| 3347 | [Maximum Frequency of an Element After Performing Operations II](./Leetcode_All_Solved/3347.cpp) | hard | 36 |  |  | 2024/11/9 |
+| 1012 | [Numbers With Repeated Digits](./Leetcode_All_Solved/1012.cpp) | hard | 37 |  | dynamic programming. bitmask. | 2024/11/3 |
 | 2376 | [Count Special Integers](./Leetcode_All_Solved/2376.cpp) | hard | 45 |  | dynamic programming. bitmask. | 2024/11/3 |
 | 2514 | [Count Anagrams](./Leetcode_All_Solved/2514.cpp) | hard | 69 |  | combinatorics. math. | 2024/11/3 |
-| 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 38 | Hard_Idea |  | 2024/11/3 |
+| 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 34 | Hard_Idea | dynamic programming. combinatorics. math. | 2024/11/3 |
 | 600 | [Non-negative Integers without Consecutive Ones](./Leetcode_All_Solved/600.cpp) | hard | 63 |  | dynamic programming. | 2024/11/3 |
 | 233 | [Number of Digit One](./Leetcode_All_Solved/233.cpp) | hard | 59 |  | dynamic programming. | 2024/11/3 |
 | 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 35 | Hard_Idea | dynamic programming. | 2024/11/2 |
@@ -284,8 +287,15 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3342 | [Find Minimum Time to Reach Last Room II](./Leetcode_All_Solved/3342.cpp) | medium | 41 |  |  | 2024/11/3 |
-| 3341 | [Find Minimum Time to Reach Last Room I](./Leetcode_All_Solved/3341.cpp) | medium | 68 |  |  | 2024/11/3 |
+| 3350 | [Adjacent Increasing Subarrays Detection II](./Leetcode_All_Solved/3350.cpp) | medium | 63 |  |  | 2024/11/10 |
+| 3346 | [Maximum Frequency of an Element After Performing Operations I](./Leetcode_All_Solved/3346.cpp) | medium | 43 |  |  | 2024/11/9 |
+| 3133 | [Minimum Array End](./Leetcode_All_Solved/3133.cpp) | medium | 68 |  | bit manipulation. greedy. | 2024/11/9 |
+| 2914 | [Minimum Number of Changes to Make Binary String Beautiful](./Leetcode_All_Solved/2914.cpp) | medium | 78 |  | sliding window. | 2024/11/8 |
+| 2275 | [Largest Combination With Bitwise AND Greater Than Zero](./Leetcode_All_Solved/2275.cpp) | medium | 80 |  | bit manipulation. | 2024/11/7 |
+| 3011 | [Find if Array Can Be Sorted](./Leetcode_All_Solved/3011.cpp) | medium | 70 |  | sorting. bit manipulation. | 2024/11/6 |
+| 3163 | [String Compression III](./Leetcode_All_Solved/3163.cpp) | medium | 92 |  | string. | 2024/11/4 |
+| 3342 | [Find Minimum Time to Reach Last Room II](./Leetcode_All_Solved/3342.cpp) | medium | 39 |  | graph. shortest path. priority queue. | 2024/11/3 |
+| 3341 | [Find Minimum Time to Reach Last Room I](./Leetcode_All_Solved/3341.cpp) | medium | 68 |  | graph. shortest path. priority queue. | 2024/11/3 |
 | 3335 | [Total Characters in String After Transformations I](./Leetcode_All_Solved/3335.cpp) | medium | 69 |  | dynamic programming. | 2024/10/27 |
 | 3334 | [Find the Maximum Factor Score of Array](./Leetcode_All_Solved/3334.m1.cpp) | medium | 80 |  | math. number theory. | 2024/10/27 |
 | 3332 | [Maximum Points Tourist Can Earn](./Leetcode_All_Solved/3332.cpp) | medium | 80 |  | dynamic programming. | 2024/10/26 |
@@ -1187,7 +1197,9 @@
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3340 | [Check Balanced String](./Leetcode_All_Solved/3340.cpp) | easy | 100 |  |  | 2024/11/3 |
+| 3349 | [Adjacent Increasing Subarrays Detection I](./Leetcode_All_Solved/3349.cpp) | easy | 79 |  |  | 2024/11/10 |
+| 3345 | [Smallest Divisible Digit Product I](./Leetcode_All_Solved/3345.cpp) | easy | 100 |  |  | 2024/11/9 |
+| 3340 | [Check Balanced String](./Leetcode_All_Solved/3340.cpp) | easy | 100 |  | string. | 2024/11/3 |
 | 796 | [Rotate String](./Leetcode_All_Solved/796.cpp) | easy | 100 |  | string. | 2024/11/3 |
 | 1957 | [Delete Characters to Make Fancy String](./Leetcode_All_Solved/1957.cpp) | easy | 97 |  | sliding window. | 2024/11/1 |
 | 3330 | [Find the Original Typed String I](./Leetcode_All_Solved/3330.cpp) | easy | 80 |  | sliding window. | 2024/10/26 |
