@@ -1,18 +1,20 @@
-- [Hard Table](./README.md#hard-table) 278 solved
-- [Medium Table](./README.md#medium-table) 907 solved
-- [Easy Table](./README.md#easy-table) 427 solved
+- [Hard Table](./README.md#hard-table) 280 solved
+- [Medium Table](./README.md#medium-table) 918 solved
+- [Easy Table](./README.md#easy-table) 430 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3352 | [Count K-Reducible Numbers Less Than N](./Leetcode_All_Solved/3352.cpp) | hard | 46 | Hard_Idea |  | 2024/11/10 |
-| 3351 | [Sum of Good Subsequences](./Leetcode_All_Solved/3351.cpp) | hard | 38 |  |  | 2024/11/10 |
+| 3367 | [Maximize Sum of Weights after Edge Removals](./Leetcode_All_Solved/3367.cpp) | hard | 48 | Hard_Idea |  | 2024/11/24 |
+| 3363 | [Find the Maximum Number of Fruits Collected](./Leetcode_All_Solved/3363.cpp) | hard | 55 |  |  | 2024/11/23 |
+| 3352 | [Count K-Reducible Numbers Less Than N](./Leetcode_All_Solved/3352.cpp) | hard | 39 | Hard_Idea |  | 2024/11/10 |
+| 3351 | [Sum of Good Subsequences](./Leetcode_All_Solved/3351.cpp) | hard | 39 |  |  | 2024/11/10 |
 | 3347 | [Maximum Frequency of an Element After Performing Operations II](./Leetcode_All_Solved/3347.cpp) | hard | 36 |  |  | 2024/11/9 |
 | 1012 | [Numbers With Repeated Digits](./Leetcode_All_Solved/1012.cpp) | hard | 37 |  | dynamic programming. bitmask. | 2024/11/3 |
 | 2376 | [Count Special Integers](./Leetcode_All_Solved/2376.cpp) | hard | 45 |  | dynamic programming. bitmask. | 2024/11/3 |
 | 2514 | [Count Anagrams](./Leetcode_All_Solved/2514.cpp) | hard | 69 |  | combinatorics. math. | 2024/11/3 |
-| 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 34 | Hard_Idea | dynamic programming. combinatorics. math. | 2024/11/3 |
+| 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 30 | Hard_Idea | dynamic programming. combinatorics. math. | 2024/11/3 |
 | 600 | [Non-negative Integers without Consecutive Ones](./Leetcode_All_Solved/600.cpp) | hard | 63 |  | dynamic programming. | 2024/11/3 |
 | 233 | [Number of Digit One](./Leetcode_All_Solved/233.cpp) | hard | 59 |  | dynamic programming. | 2024/11/3 |
 | 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 35 | Hard_Idea | dynamic programming. | 2024/11/2 |
@@ -53,12 +55,12 @@
 | 1632 | [Rank Transform of a Matrix](./Leetcode_All_Solved/1632.m1.cpp) | hard | 38 | Hard_Idea | union find. topological sort. | 2024/7/17 |
 | 1857 | [Largest Color Value in a Directed Graph](./Leetcode_All_Solved/1857.cpp) | hard | 50 | Hard_Idea | topological sort. dynamic programming. graph. | 2024/7/17 |
 | 3219 | [Minimum Cost for Cutting Cake II](./Leetcode_All_Solved/3219.cpp) | hard | 46 | Hard_Idea | greedy. | 2024/7/17 |
-| 2604 | [Minimum Time to Eat All Grains](./Leetcode_All_Solved/2604.cpp) | hard | 20 | Hard_Idea | binary search. | 2024/7/15 |
+| 2604 | [Minimum Time to Eat All Grains](./Leetcode_All_Solved/2604.cpp) | hard | 18 | Hard_Idea | binary search. | 2024/7/15 |
 | 2702 | [Minimum Operations to Make Numbers Non-positive](./Leetcode_All_Solved/2702.cpp) | hard | 40 | Hard_Idea | binary search. | 2024/7/15 |
 | 2528 | [Maximize the Minimum Powered City](./Leetcode_All_Solved/2528.cpp) | hard | 50 | Hard_Idea | binary search. sliding window. greedy. | 2024/7/15 |
 | 1187 | [Make Array Strictly Increasing](./Leetcode_All_Solved/1187.cpp) | hard | 40 | Hard_Idea | dynamic programming. binary search. | 2024/7/15 |
 | 2272 | [Substring With Largest Variance](./Leetcode_All_Solved/2272.m1.cpp) | hard | 40 | Hard_Idea | dynamic programming. | 2024/7/15 |
-| 956 | [Tallest Billboard](./Leetcode_All_Solved/956.cpp) | hard | 24 | Hard_Idea | dynamic programming. | 2024/7/15 |
+| 956 | [Tallest Billboard](./Leetcode_All_Solved/956.cpp) | hard | 20 | Hard_Idea | dynamic programming. | 2024/7/15 |
 | 1312 | [Minimum Insertion Steps to Make a String Palindrome](./Leetcode_All_Solved/1312.cpp) | hard | 70 |  | dynamic programming. | 2024/7/15 |
 | 727 | [Minimum Window Subsequence](./Leetcode_All_Solved/727.cpp) | hard | 48 |  | dynamic programming. | 2024/7/15 |
 | 1771 | [Maximize Palindrome Length From Subsequences](./Leetcode_All_Solved/1771.m1.cpp) | hard | 47 | Hard_Idea | dynamic programming. | 2024/7/15 |
@@ -287,6 +289,17 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3366 | [Minimum Array Sum](./Leetcode_All_Solved/3366.cpp) | medium | 69 |  |  | 2024/11/24 |
+| 3365 | [Rearrange K Substrings to Form Target String](./Leetcode_All_Solved/3365.cpp) | medium | 83 |  |  | 2024/11/24 |
+| 3362 | [Zero Array Transformation III](./Leetcode_All_Solved/3362.cpp) | medium | 45 |  |  | 2024/11/23 |
+| 3361 | [Shift Distance Between Two Strings](./Leetcode_All_Solved/3361.cpp) | medium | 80 |  |  | 2024/11/23 |
+| 3356 | [Zero Array Transformation II](./Leetcode_All_Solved/3356.cpp) | medium | 70 |  | prefix sum. binary search. | 2024/11/23 |
+| 3355 | [Zero Array Transformation I](./Leetcode_All_Solved/3355.cpp) | medium | 80 |  | prefix sum. | 2024/11/17 |
+| 2107 | [Number of Unique Flavors After Sharing K Candies](./Leetcode_All_Solved/2107.cpp) | medium | 80 |  | sliding window. | 2024/11/15 |
+| 2064 | [Minimized Maximum of Products Distributed to Any Store](./Leetcode_All_Solved/2064.m1.cpp) | medium | 66 | Hard_Idea | binary search. greedy. | 2024/11/14 |
+| 2563 | [Count the Number of Fair Pairs](./Leetcode_All_Solved/2563.m1.cpp) | medium | 60 |  | two pointers. binary search. | 2024/11/13 |
+| 2601 | [Prime Subtraction Operation](./Leetcode_All_Solved/2601.cpp) | medium | 69 |  | greedy. binary search. number theory. math. | 2024/11/12 |
+| 2070 | [Most Beautiful Item for Each Query](./Leetcode_All_Solved/2070.cpp) | medium | 69 |  | binary search. sorting. | 2024/11/12 |
 | 3350 | [Adjacent Increasing Subarrays Detection II](./Leetcode_All_Solved/3350.cpp) | medium | 63 |  |  | 2024/11/10 |
 | 3346 | [Maximum Frequency of an Element After Performing Operations I](./Leetcode_All_Solved/3346.cpp) | medium | 43 |  |  | 2024/11/9 |
 | 3133 | [Minimum Array End](./Leetcode_All_Solved/3133.cpp) | medium | 68 |  | bit manipulation. greedy. | 2024/11/9 |
@@ -787,7 +800,7 @@
 | 1630 | [Arithmetic Subarrays](./Leetcode_All_Solved/1630.cpp) | medium | 80 |  | sorting. | 2023/1/17 |
 | 57 | [Insert Interval](./Leetcode_All_Solved/57.cpp) | medium | 50 |  |  | 2023/1/16 |
 | 433 | [Minimum Genetic Mutation](./Leetcode_All_Solved/433.cpp) | medium | 79 |  | bfs. | 2023/1/14 |
-| 1091 | [Shortest Path in Binary Matrix](./Leetcode_All_Solved/1091.m1.cpp) | medium | 76 |  | bfs. | 2023/6/2 |
+| 1091 | [Shortest Path in Binary Matrix](./Leetcode_All_Solved/1091.py.cpp) | medium | 76 |  | bfs. | 2023/6/2 |
 | 714 | [Best Time to Buy and Sell Stock with Transaction Fee](./Leetcode_All_Solved/714.cpp) | medium | 49 |  | dynamic programming. | 2023/1/13 |
 | 1519 | [Number of Nodes in the Sub-Tree With the Same Label](./Leetcode_All_Solved/1519.m1.cpp) | medium | 54 | Hard_Idea | tree. | 2023/6/5 |
 | 1443 | [Minimum Time to Collect All Apples in a Tree](./Leetcode_All_Solved/1443.cpp) | medium | 76 |  | tree. | 2023/1/11 |
@@ -891,7 +904,7 @@
 | 413 | [Arithmetic Slices](./Leetcode_All_Solved/413.m2.cpp) | medium | 65 |  | dynamic programming. | 2023/5/7 |
 | 1035 | [Uncrossed Lines](./Leetcode_All_Solved/1035.m3.cpp) | medium | 70 |  | dynamic programming. | 2024/9/27 |
 | 1230 | [Toss Strange Coins](./Leetcode_All_Solved/1230.cpp) | medium | 43 |  | dynamic programming. | 2022/12/9 |
-| 139 | [Word Break](./Leetcode_All_Solved/139.cpp) | medium |  |  | dfs. dynamic programming. | 2022/12/8 |
+| 139 | [Word Break](./Leetcode_All_Solved/139.py.cpp) | medium |  |  | dfs. dynamic programming. | 2022/12/8 |
 | 5 | [Longest Palindromic Substring](./Leetcode_All_Solved/5.m2.cpp) | medium | 70 |  | dynamic programming. | 2024/6/26 |
 | 740 | [Delete and Earn](./Leetcode_All_Solved/740.cpp) | medium | 44 |  |  | 2022/12/7 |
 | 2320 | [Count Number of Ways to Place Houses](./Leetcode_All_Solved/2320.cpp) | medium |  |  |  | 2022/12/7 |
@@ -985,7 +998,7 @@
 | 1504 | [Count Submatrices With All Ones](./Leetcode_All_Solved/1504.m1.cpp) | medium | 73 |  | dynamic programming. | 2022/12/11 |
 | 752 | [Open the Lock](./Leetcode_All_Solved/752.cpp) | medium | 78 | Hard_Idea | bfs. | 2022/5/3 |
 | 143 | [Reorder List](./Leetcode_All_Solved/143.cpp) | medium | 78 | Hard_Idea | linked list. | 2022/5/3 |
-| 146 | [LRU Cache](./Leetcode_All_Solved/146.cpp) | medium | 68 | Hard_Idea | linked list. doubly-linked list. | 2022/5/3 |
+| 146 | [LRU Cache](./Leetcode_All_Solved/146.py.cpp) | medium | 68 | Hard_Idea | linked list. doubly-linked list. | 2022/5/3 |
 | 122 | [Best Time to Buy and Sell Stock II](./Leetcode_All_Solved/122.m2.cpp) | medium | 44 | Hard_Idea | greedy. dynamic programming. | 2023/6/29 |
 | 240 | [Search a 2D Matrix II](./Leetcode_All_Solved/240.m1.cpp) | medium | 82 | Hard_Idea | matrix. binary search. | 2022/5/1 |
 | 300 | [Longest Increasing Subsequence](./Leetcode_All_Solved/300.m4.cpp) | medium | 74 | Hard_Idea | binary search. greedy. dynamic programming. | 2024/7/20 |
@@ -1032,7 +1045,7 @@
 | 1170 | [Compare Strings by Frequency of the Smallest Character](./Leetcode_All_Solved/1170.cpp) | medium | 90 |  | binary search. | 2022/4/22 |
 | 540 | [Single Element in a Sorted Array](./Leetcode_All_Solved/540.cpp) | medium | 77 |  | binary search. | 2022/4/22 |
 | 981 | [Time Based Key-Value Store](./Leetcode_All_Solved/981.cpp) | medium | 87 |  | binary search. | 2022/4/22 |
-| 162 | [Find Peak Element](./Leetcode_All_Solved/162.m1.cpp) | medium | 84 |  | binary search. | 2022/4/22 |
+| 162 | [Find Peak Element](./Leetcode_All_Solved/162.py.cpp) | medium | 84 |  | binary search. | 2022/4/22 |
 | 1584 | [Min Cost to Connect All Points](./Leetcode_All_Solved/1584.m1.cpp) | medium | 70 |  | minimum spanning tree. graph. union find. | 2022/4/21 |
 | 1237 | [Find Positive Integer Solution for a Given Equation](./Leetcode_All_Solved/1237.cpp) | medium | 93 |  | binary search. | 2022/4/21 |
 | 1004 | [Max Consecutive Ones III](./Leetcode_All_Solved/1004.m1.cpp) | medium | 82 |  | sliding window. | 2022/12/9 |
@@ -1110,7 +1123,7 @@
 | 2095 | [Delete the Middle Node of a Linked List](./Leetcode_All_Solved/2095.cpp) | medium | 92 |  | linked list. slow fast pointers. | 2022/4/1 |
 | 633 | [Sum of Square Numbers](./Leetcode_All_Solved/633.cpp) | medium | 55 |  | two pointers. binary search. | 2022/3/31 |
 | 153 | [Find Minimum in Rotated Sorted Array](./Leetcode_All_Solved/153.cpp) | medium | 86 |  | binary search. | 2022/3/31 |
-| 34 | [Find First and Last Position of Element in Sorted Array](./Leetcode_All_Solved/34.cpp) | medium | 82 |  | binary search. | 2022/3/31 |
+| 34 | [Find First and Last Position of Element in Sorted Array](./Leetcode_All_Solved/34.py.cpp) | medium | 82 |  | binary search. | 2022/3/31 |
 | 173 | [Binary Search Tree Iterator](./Leetcode_All_Solved/173.cpp) | medium | 77 |  | tree. | 2022/3/31 |
 | 109 | [Convert Sorted List to Binary Search Tree](./Leetcode_All_Solved/109.cpp) | medium | 91 |  | tree. | 2022/3/31 |
 | 150 | [Evaluate Reverse Polish Notation](./Leetcode_All_Solved/150.m1.cpp) | medium | 100 |  | stack. | 2022/12/17 |
@@ -1135,8 +1148,8 @@
 | 1161 | [Maximum Level Sum of a Binary Tree](./Leetcode_All_Solved/1161.cpp) | medium | 96 |  | tree. level order. | 2022/3/29 |
 | 103 | [Binary Tree Zigzag Level Order Traversal](./Leetcode_All_Solved/103.cpp) | medium | 79 |  | tree. level order. | 2022/3/29 |
 | 797 | [All Paths From Source to Target](./Leetcode_All_Solved/797.cpp) | medium | 90 |  | dag. backtracking. | 2022/3/29 |
-| 130 | [Surrounded Regions](./Leetcode_All_Solved/130.cpp) | medium | 97 |  | dfs. grid dfs. | 2022/3/29 |
-| 547 | [Number of Provinces](./Leetcode_All_Solved/547.m1.cpp) | medium | 98 |  | union find. | 2024/9/25 |
+| 130 | [Surrounded Regions](./Leetcode_All_Solved/130.py.cpp) | medium | 97 |  | dfs. grid dfs. | 2022/3/29 |
+| 547 | [Number of Provinces](./Leetcode_All_Solved/547.py.cpp) | medium | 98 |  | union find. | 2024/9/25 |
 | 116 | [Populating Next Right Pointers in Each Node](./Leetcode_All_Solved/116.cpp) | medium | 94 |  | tree. level order. | 2022/3/28 |
 | 117 | [Populating Next Right Pointers in Each Node II](./Leetcode_All_Solved/117.cpp) | medium | 94 |  | tree. level order. | 2022/3/28 |
 | 199 | [Binary Tree Right Side View](./Leetcode_All_Solved/199.cpp) | medium | 94 |  | tree. level order. | 2022/3/28 |
@@ -1157,7 +1170,7 @@
 | 102 | [Binary Tree Level Order Traversal](./Leetcode_All_Solved/102.m1.cpp) | medium | 94 |  | tree. level order. | 2022/3/29 |
 | 107 | [Binary Tree Level Order Traversal II](./Leetcode_All_Solved/107.cpp) | medium | 94 |  | tree. level order. | 2022/3/26 |
 | 429 | [N-ary Tree Level Order Traversal](./Leetcode_All_Solved/429.m1.cpp) | medium | 92 |  | tree. level order. | 2022/3/29 |
-| 62 | [Unique Paths](./Leetcode_All_Solved/62.cpp) | medium | 98 |  | dynamic programming. | 2022/3/26 |
+| 62 | [Unique Paths](./Leetcode_All_Solved/62.py.cpp) | medium | 98 |  | dynamic programming. | 2022/3/26 |
 | 63 | [Unique Paths II](./Leetcode_All_Solved/63.cpp) | medium | 95 |  | dynamic programming. | 2022/3/26 |
 | 64 | [Minimum Path Sum](./Leetcode_All_Solved/64.m2.cpp) | medium | 90 |  | dynamic programming. | 2022/12/19 |
 | 2 | [Add Two Numbers](./Leetcode_All_Solved/2.cpp) | medium | 95 |  | linked list. | 2022/3/26 |
@@ -1193,10 +1206,13 @@
 | 454 | [4Sum II](./Leetcode_All_Solved/454.cpp) | medium | 37 |  | 3sum. two pointers. | 2022/3/19 |
 | 3 | [Longest Substring Without Repeating Characters](./Leetcode_All_Solved/3.m1.cpp) | medium | 79 |  | sliding window. | 2024/10/2 |
 | 36 | [Valid Sudoku](./Leetcode_All_Solved/36.m1.cpp) | medium | 80 |  | hash table. matrix. | 2024/9/25 |
-| 17 | [Letter Combinations of a Phone Number](./Leetcode_All_Solved/17.cpp) | medium |  |  | backtracking. | 2022/3/18 |
+| 17 | [Letter Combinations of a Phone Number](./Leetcode_All_Solved/17.cpp) | medium | 80 |  | backtracking. | 2022/3/18 |
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3364 | [Minimum Positive Sum Subarray](./Leetcode_All_Solved/3364.cpp) | easy | 90 |  |  | 2024/11/24 |
+| 3360 | [Stone Removal Game](./Leetcode_All_Solved/3360.cpp) | easy | 81 |  |  | 2024/11/23 |
+| 3354 | [Make Array Elements Equal to Zero](./Leetcode_All_Solved/3354.cpp) | easy | 80 |  | simulation. prefix sum. | 2024/11/17 |
 | 3349 | [Adjacent Increasing Subarrays Detection I](./Leetcode_All_Solved/3349.cpp) | easy | 79 |  |  | 2024/11/10 |
 | 3345 | [Smallest Divisible Digit Product I](./Leetcode_All_Solved/3345.cpp) | easy | 100 |  |  | 2024/11/9 |
 | 3340 | [Check Balanced String](./Leetcode_All_Solved/3340.cpp) | easy | 100 |  | string. | 2024/11/3 |
