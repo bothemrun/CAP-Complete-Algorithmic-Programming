@@ -1,3 +1,4 @@
+![LeetCode Stats](https://leetcard.jacoblin.cool/bothemrun?ext=contest)
 - [Hard Table](./README.md#hard-table) 280 solved
 - [Medium Table](./README.md#medium-table) 918 solved
 - [Easy Table](./README.md#easy-table) 430 solved
