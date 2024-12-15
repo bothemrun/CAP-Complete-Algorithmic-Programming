@@ -1,14 +1,14 @@
 ![LeetCode Stats](https://leetcard.jacoblin.cool/bothemrun?ext=contest)
 - [Hard Table](./README.md#hard-table) 280 solved
-- [Medium Table](./README.md#medium-table) 918 solved
-- [Easy Table](./README.md#easy-table) 430 solved
+- [Medium Table](./README.md#medium-table) 922 solved
+- [Easy Table](./README.md#easy-table) 432 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3367 | [Maximize Sum of Weights after Edge Removals](./Leetcode_All_Solved/3367.cpp) | hard | 48 | Hard_Idea |  | 2024/11/24 |
-| 3363 | [Find the Maximum Number of Fruits Collected](./Leetcode_All_Solved/3363.cpp) | hard | 55 |  |  | 2024/11/23 |
+| 3367 | [Maximize Sum of Weights after Edge Removals](./Leetcode_All_Solved/3367.cpp) | hard | 36 | Hard_Idea | tree. dynamic programming. | 2024/11/24 |
+| 3363 | [Find the Maximum Number of Fruits Collected](./Leetcode_All_Solved/3363.cpp) | hard | 55 |  | dynamic programming. | 2024/11/23 |
 | 3352 | [Count K-Reducible Numbers Less Than N](./Leetcode_All_Solved/3352.cpp) | hard | 39 | Hard_Idea |  | 2024/11/10 |
 | 3351 | [Sum of Good Subsequences](./Leetcode_All_Solved/3351.cpp) | hard | 39 |  |  | 2024/11/10 |
 | 3347 | [Maximum Frequency of an Element After Performing Operations II](./Leetcode_All_Solved/3347.cpp) | hard | 36 |  |  | 2024/11/9 |
@@ -290,10 +290,14 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3366 | [Minimum Array Sum](./Leetcode_All_Solved/3366.cpp) | medium | 69 |  |  | 2024/11/24 |
-| 3365 | [Rearrange K Substrings to Form Target String](./Leetcode_All_Solved/3365.cpp) | medium | 83 |  |  | 2024/11/24 |
-| 3362 | [Zero Array Transformation III](./Leetcode_All_Solved/3362.cpp) | medium | 45 |  |  | 2024/11/23 |
-| 3361 | [Shift Distance Between Two Strings](./Leetcode_All_Solved/3361.cpp) | medium | 80 |  |  | 2024/11/23 |
+| 3388 | [Count Beautiful Splits in an Array](./Leetcode_All_Solved/3388.m2.cpp) | medium | 60 | Hard_Idea | dynamic programming. rolling hash. | 2024/12/15 |
+| 3387 | [Maximize Amount After Two Days of Conversions](./Leetcode_All_Solved/3387.cpp) | medium | 68 |  |  | 2024/12/15 |
+| 3381 | [Maximum Subarray Sum With Length Divisible by K](./Leetcode_All_Solved/3381.cpp) | medium | 60 |  | prefix sum. | 2024/12/8 |
+| 3380 | [Maximum Area Rectangle With Point Constraints I](./Leetcode_All_Solved/3380.cpp) | medium | 68 |  | math. geometry. | 2024/12/8 |
+| 3366 | [Minimum Array Sum](./Leetcode_All_Solved/3366.cpp) | medium | 69 |  | dynamic programming. | 2024/11/24 |
+| 3365 | [Rearrange K Substrings to Form Target String](./Leetcode_All_Solved/3365.cpp) | medium | 83 |  | hash table. | 2024/11/24 |
+| 3362 | [Zero Array Transformation III](./Leetcode_All_Solved/3362.cpp) | medium | 37 |  | greedy. priority queue. prefix sum. | 2024/11/23 |
+| 3361 | [Shift Distance Between Two Strings](./Leetcode_All_Solved/3361.cpp) | medium | 80 |  | prefix sum. | 2024/11/23 |
 | 3356 | [Zero Array Transformation II](./Leetcode_All_Solved/3356.cpp) | medium | 70 |  | prefix sum. binary search. | 2024/11/23 |
 | 3355 | [Zero Array Transformation I](./Leetcode_All_Solved/3355.cpp) | medium | 80 |  | prefix sum. | 2024/11/17 |
 | 2107 | [Number of Unique Flavors After Sharing K Candies](./Leetcode_All_Solved/2107.cpp) | medium | 80 |  | sliding window. | 2024/11/15 |
@@ -695,7 +699,7 @@
 | 2439 | [Minimize Maximum of Array](./Leetcode_All_Solved/2439.m2.cpp) | medium | 59 | Hard_Idea | binary search. greedy. | 2023/4/5 |
 | 2405 | [Optimal Partition of String](./Leetcode_All_Solved/2405.cpp) | medium | 100 |  | greedy. | 2023/4/4 |
 | 1087 | [Brace Expansion](./Leetcode_All_Solved/1087.cpp) | medium | 87 |  | backtracking. | 2023/4/4 |
-| 73 | [Set Matrix Zeroes](./Leetcode_All_Solved/73.cpp) | medium | 80 |  | matrix. | 2023/4/4 |
+| 73 | [Set Matrix Zeroes](./Leetcode_All_Solved/73.cpp) | medium | 34 |  | matrix. | 2023/4/4 |
 | 2128 | [Remove All Ones With Row and Column Flips](./Leetcode_All_Solved/2128.cpp) | medium | 64 |  | bit manipulation. matrix. | 2023/4/4 |
 | 881 | [Boats to Save People](./Leetcode_All_Solved/881.cpp) | medium | 80 |  | greedy. two pointers. | 2023/4/3 |
 | 2610 | [Convert an Array Into a 2D Array With Conditions](./Leetcode_All_Solved/2610.cpp) | medium | 90 |  |  | 2023/4/2 |
@@ -1211,8 +1215,10 @@
 ## easy table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
-| 3364 | [Minimum Positive Sum Subarray](./Leetcode_All_Solved/3364.cpp) | easy | 90 |  |  | 2024/11/24 |
-| 3360 | [Stone Removal Game](./Leetcode_All_Solved/3360.cpp) | easy | 81 |  |  | 2024/11/23 |
+| 3386 | [Button with Longest Push Time](./Leetcode_All_Solved/3386.cpp) | easy | 98 |  |  | 2024/12/15 |
+| 3379 | [Transformed Array](./Leetcode_All_Solved/3379.cpp) | easy | 99 |  | simulation. | 2024/12/8 |
+| 3364 | [Minimum Positive Sum Subarray](./Leetcode_All_Solved/3364.cpp) | easy | 90 |  | prefix sum. sliding window. | 2024/11/24 |
+| 3360 | [Stone Removal Game](./Leetcode_All_Solved/3360.cpp) | easy | 81 |  | simulation. math. | 2024/11/23 |
 | 3354 | [Make Array Elements Equal to Zero](./Leetcode_All_Solved/3354.cpp) | easy | 80 |  | simulation. prefix sum. | 2024/11/17 |
 | 3349 | [Adjacent Increasing Subarrays Detection I](./Leetcode_All_Solved/3349.cpp) | easy | 79 |  |  | 2024/11/10 |
 | 3345 | [Smallest Divisible Digit Product I](./Leetcode_All_Solved/3345.cpp) | easy | 100 |  |  | 2024/11/9 |
