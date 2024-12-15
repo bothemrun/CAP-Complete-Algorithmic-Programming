@@ -1,5 +1,5 @@
 //m2
-//O(n^2) dp
+//O(n^2) dp: wisdompeak Dual Sequence on 1
 static auto _ = [](){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -12,13 +12,13 @@ public:
     int n;
     const int notyet = (-1);
     vector<vector<int>> memo;
-    int lcs_start(const vector<int>& nums, const int i, const int j){
-        if(i>=j) return 0;
+    int lcs_dual_sequence_on1(const vector<int>& nums, const int i, const int j){
         if(!(j<n)) return 0;
+        assert(i<j);
 
         if(memo[i][j] != notyet) return memo[i][j];
 
-        return memo[i][j] = (nums[i]==nums[j])? (1 + lcs_start(nums, i+1, j+1) ):0;
+        return memo[i][j] = (nums[i]==nums[j])? (1 + lcs_dual_sequence_on1(nums, i+1, j+1) ):0;
     }
 
     int beautifulSplits(vector<int>& nums) {
@@ -34,14 +34,14 @@ public:
                 //edge case
                 //wrong: if(end2<n)
                 if(end2 <= j){
-                    if(lcs_start(nums, 0, i+1) >= i - (0-1) ){
+                    if(lcs_dual_sequence_on1(nums, 0, i+1) >= i - (0-1) ){
                         ans++;
                         continue;
                     }
                 }
                 int end3 = (j+1) + j - (i+1);
                 if(end3 < n){
-                    if(lcs_start(nums, i+1, j+1) >= j - i){
+                    if(lcs_dual_sequence_on1(nums, i+1, j+1) >= j - i){
                         ans++;
                     }
                 }
