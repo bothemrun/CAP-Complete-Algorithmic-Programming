@@ -1,12 +1,13 @@
 ![LeetCode Stats](https://leetcard.jacoblin.cool/bothemrun?ext=contest)
-- [Hard Table](./README.md#hard-table) 280 solved
-- [Medium Table](./README.md#medium-table) 922 solved
+- [Hard Table](./README.md#hard-table) 281 solved
+- [Medium Table](./README.md#medium-table) 923 solved
 - [Easy Table](./README.md#easy-table) 432 solved
 - Diff := difficulty (0~100), the lower the harder.
 - Hard_Idea := hard to come up with the solution/idea.
 ## hard table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 3389 | [Minimum Operations to Make Character Frequencies Equal](./Leetcode_All_Solved/3389.cpp) | hard | 40 | Hard_Idea | dynamic programming. | 2024/12/15 |
 | 3367 | [Maximize Sum of Weights after Edge Removals](./Leetcode_All_Solved/3367.cpp) | hard | 36 | Hard_Idea | tree. dynamic programming. | 2024/11/24 |
 | 3363 | [Find the Maximum Number of Fruits Collected](./Leetcode_All_Solved/3363.cpp) | hard | 55 |  | dynamic programming. | 2024/11/23 |
 | 3352 | [Count K-Reducible Numbers Less Than N](./Leetcode_All_Solved/3352.cpp) | hard | 39 | Hard_Idea |  | 2024/11/10 |
@@ -18,9 +19,9 @@
 | 3343 | [Count Number of Balanced Permutations](./Leetcode_All_Solved/3343.cpp) | hard | 30 | Hard_Idea | dynamic programming. combinatorics. math. | 2024/11/3 |
 | 600 | [Non-negative Integers without Consecutive Ones](./Leetcode_All_Solved/600.cpp) | hard | 63 |  | dynamic programming. | 2024/11/3 |
 | 233 | [Number of Digit One](./Leetcode_All_Solved/233.cpp) | hard | 59 |  | dynamic programming. | 2024/11/3 |
-| 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 35 | Hard_Idea | dynamic programming. | 2024/11/2 |
-| 1987 | [Number of Unique Good Subsequences](./Leetcode_All_Solved/1987.cpp) | hard | 39 | Hard_Idea | dynamic programming. | 2024/11/2 |
-| 1316 | [Distinct Echo Substrings](./Leetcode_All_Solved/1316.cpp) | hard | 49 | Hard_Idea | dynamic programming. rolling hash. trie. | 2024/11/2 |
+| 940 | [Distinct Subsequences II](./Leetcode_All_Solved/940.cpp) | hard | 30 | Hard_Idea | dynamic programming. | 2024/11/2 |
+| 1987 | [Number of Unique Good Subsequences](./Leetcode_All_Solved/1987.cpp) | hard | 35 | Hard_Idea | dynamic programming. | 2024/11/2 |
+| 1316 | [Distinct Echo Substrings](./Leetcode_All_Solved/1316.m1.cpp) | hard | 35 | Hard_Idea | dynamic programming. rolling hash. trie. | 2024/12/15 |
 | 3336 | [Find the Number of Subsequences With Equal GCD](./Leetcode_All_Solved/3336.cpp) | hard | 43 | Hard_Idea | dynamic programming. math. number theory. | 2024/10/27 |
 | 3307 | [Find the K-th Character in String Game II](./Leetcode_All_Solved/3307.cpp) | hard | 57 |  | bit manipulation. math. | 2024/9/29 |
 | 1499 | [Max Value of Equation](./Leetcode_All_Solved/1499.m1.cpp) | hard | 35 | Hard_Idea | sliding window. queue. monotonic queue. priority queue. | 2024/8/3 |
@@ -290,6 +291,7 @@
 ## medium table
 |#| Problem | Level |Diff| Hard_Idea | Tags |Last Date|
 |-| ------- |--|-|--| -------- |-|
+| 1792 | [Maximum Average Pass Ratio](./Leetcode_All_Solved/1792.cpp) | medium | 69 | Hard_Idea | greedy. priority queue. | 2024/12/15 |
 | 3388 | [Count Beautiful Splits in an Array](./Leetcode_All_Solved/3388.m2.cpp) | medium | 60 | Hard_Idea | dynamic programming. rolling hash. | 2024/12/15 |
 | 3387 | [Maximize Amount After Two Days of Conversions](./Leetcode_All_Solved/3387.cpp) | medium | 68 |  |  | 2024/12/15 |
 | 3381 | [Maximum Subarray Sum With Length Divisible by K](./Leetcode_All_Solved/3381.cpp) | medium | 60 |  | prefix sum. | 2024/12/8 |
