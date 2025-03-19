@@ -1,4 +1,5 @@
-![LeetCode Stats](https://leetcard.jacoblin.cool/bothemrun?ext=contest)
+![LeetCode Stats](https://leetcard.jacoblin.cool/allinm_bothemrun?ext=contest)
+
 - [Hard Table](./README.md#hard-table) 281 solved
 - [Medium Table](./README.md#medium-table) 923 solved
 - [Easy Table](./README.md#easy-table) 432 solved
